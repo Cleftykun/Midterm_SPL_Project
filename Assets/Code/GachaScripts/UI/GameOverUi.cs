@@ -7,11 +7,13 @@ public class GameOverUi : MonoBehaviour
 
     public void ShowGameOver()
     {
+        Time.timeScale = 0f; // Pause game
         gameOverPanel.SetActive(true);
     }
 
     public void PlayAgain()
     {
+        Time.timeScale = 1f;
         Debug.Log(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the level
     }
