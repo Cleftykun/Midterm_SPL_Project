@@ -9,6 +9,7 @@ public class Plot : MonoBehaviour
     
     private GameObject tower;
     private Color startColor;
+    public PlayerMovement player;
 
     void Awake()
     {
@@ -79,6 +80,7 @@ public class Plot : MonoBehaviour
 
         // Place the tower
         LevelManager.main.SpendCurrency(towerToBuild.cost);
+        player.Build();
         tower = Instantiate(towerToBuild.towerPrefab, transform.position, Quaternion.identity); 
 
         // Remove tower from inventory

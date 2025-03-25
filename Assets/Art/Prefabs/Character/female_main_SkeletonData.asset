@@ -12,17 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
   m_Name: female_main_SkeletonData
   m_EditorClassIdentifier: 
-  atlasAssets:
-  - {fileID: 11400000, guid: cbd5ab13c723c0f42968fd126c2e3103, type: 2}
+  atlasAssets: []
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: c1b8a9a02590ea54ebb6f2cb823f5a5b, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 6bbe71b69249a95458bb7d40d441c797, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
-    requiresBlendModeMaterials: 1
+    requiresBlendModeMaterials: 0
     applyAdditiveMaterial: 1
-    additiveMaterials:
-    - pageName: female_main.png
-      material: {fileID: 2100000, guid: 1209c3abd77a754499d4eac9b661634a, type: 2}
+    additiveMaterials: []
     multiplyMaterials: []
     screenMaterials: []
   skeletonDataModifiers: []

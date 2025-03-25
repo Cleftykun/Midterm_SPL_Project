@@ -21,6 +21,7 @@ public class TowerManager : MonoBehaviour
 
     public void UnregisterSupportTower(BaseSupport tower)
     {
+        Debug.Log(tower);
         supportTowers.Remove(tower);
     }
 

@@ -6,6 +6,7 @@ public class ScreenKey
 {
     public GameObject targetObject;
     public KeyCode toggleKey;
+    
 }
 
 public class PhoneManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class PhoneManager : MonoBehaviour
     public GameObject PhoneUI;
     public List<ScreenKey> ScreenKey = new List<ScreenKey>();
     private GameObject activeScreen = null;
+    public PlayerMovement playerMovement;
 
     void Start()
     {
@@ -36,11 +38,13 @@ public class PhoneManager : MonoBehaviour
                     SetVisibility(PhoneUI, false);
                     SetVisibility(activeScreen, false);
                     activeScreen = null;
+                    playerMovement.PhoneUnEquip();
                 }
                 else
                 {
                     SetVisibility(PhoneUI, true);
                     Activate(pair.targetObject);
+                    playerMovement.PhoneEquip();
                 }
             }
         }

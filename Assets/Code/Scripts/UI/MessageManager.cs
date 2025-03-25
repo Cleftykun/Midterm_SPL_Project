@@ -15,6 +15,7 @@ public class MessageManager : MonoBehaviour
     public GameObject messagePrefab;
     public Transform chatPanel;
     public GameObject cPanel;
+    //public GameObject contactsPanel;
     public GameObject replyPanel;
     public GameObject replyButtonPrefab;
     private Dictionary<string, List<string>> chatHistory = new Dictionary<string, List<string>>();
@@ -25,12 +26,6 @@ public class MessageManager : MonoBehaviour
     {
         replyPanel.SetActive(false);
         Debug.Log("MessageManager: Initialized and reply panel hidden.");
-    }
-
-    public void CloseChat()
-    {
-        currentContact = "";
-        cPanel.SetActive(false);
     }
 
     public void AddMessage(string contactName, string message, bool isPlayer)
@@ -131,6 +126,7 @@ public class MessageManager : MonoBehaviour
         replyPanel.SetActive(false);
         currentContact = contactName;
         cPanel.SetActive(true);
+        // contactsPanel.SetActive(false);
         UpdateChatDisplay();
 
         DialogueController activeDialogue = FindActiveDialogueController();
@@ -140,6 +136,12 @@ public class MessageManager : MonoBehaviour
             Debug.Log("MessageManager: Displaying pending reply for " + contactName);
             activeDialogue.pending();
         }
+    }
+    public void CloseChat()
+    {
+        currentContact = "";
+        cPanel.SetActive(false);
+        // contactsPanel.SetActive(true);
     }
 
     public void ShowReplyOptions(string chooseLine)
