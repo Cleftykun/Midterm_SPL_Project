@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
-  m_Name: AssemblyTowerData
+  m_Name: Cobol Tower
   m_EditorClassIdentifier: 
-  towerID: 0
-  towerName: Assembly Tower
-  towerPrefab: {fileID: 5135398175848266765, guid: 7998fae61bae67545805ceb3b28f7b41, type: 3}
-  rarity: C
-  cost: 0
+  towerID: 4
+  towerName: Cobol Tower
+  towerPrefab: {fileID: 5135398175848266765, guid: d8e2818b4db5ef244b1f2a5bac6c33da, type: 3}
+  icon: {fileID: 0}
+  rarity: R
+  cost: 50
   isWaterTower: 0

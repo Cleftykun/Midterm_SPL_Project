@@ -51,7 +51,7 @@ public class Plot : MonoBehaviour
             Debug.LogWarning("Cannot Be Placed Here");
             return;
         }
-
+        Debug.Log(BuildManager.Instance.GetSelectedTower());
         TowerData towerToBuild = BuildManager.Instance.GetSelectedTower(); 
         if (towerToBuild == null)
         {
@@ -80,7 +80,7 @@ public class Plot : MonoBehaviour
 
         // Place the tower
         LevelManager.main.SpendCurrency(towerToBuild.cost);
-        player.Build();
+        // player.Build();
         tower = Instantiate(towerToBuild.towerPrefab, transform.position, Quaternion.identity); 
 
         // Remove tower from inventory

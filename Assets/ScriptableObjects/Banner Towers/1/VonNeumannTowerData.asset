@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
   m_Name: VonNeumannTowerData
   m_EditorClassIdentifier: 
-  towerID: 3
+  towerID: 99
   towerName: Von Neumann Tower
   towerPrefab: {fileID: 5135398175848266765, guid: 1586c1c3d912f0a4fb8c7ee863ce6b84, type: 3}
+  icon: {fileID: 0}
   rarity: U
   cost: 0
   isWaterTower: 0

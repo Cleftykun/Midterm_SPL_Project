@@ -2,7 +2,9 @@ using UnityEngine;
 
 public abstract class BaseSupport : MonoBehaviour
 {
-    protected bool isActive = true; // Can be toggled on/off if needed
+    [Header("Tower Data")]
+    public string towerName;
+    protected bool isDisabled = true; // Can be toggled on/off if needed
 
     protected virtual void Start()
     {
@@ -27,5 +29,14 @@ public abstract class BaseSupport : MonoBehaviour
     {
         TowerManager.Instance.UnregisterSupportTower(this);
         RemoveSupportEffect();
+    }
+    public void DisableTower()
+    {
+        isDisabled = true;
+    }
+
+    public void EnableTower()
+    {
+        isDisabled = false;
     }
 }
