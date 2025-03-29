@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -377320307
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b94e31296c8549b458b49b125d6d0f54, type: 3}
   m_Color: {r: 0.5424528, g: 1, b: 0.8775942, a: 1}
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -377320307
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b94e31296c8549b458b49b125d6d0f54, type: 3}
   m_Color: {r: 0.5424528, g: 1, b: 0.8775942, a: 1}
@@ -185,7 +185,6 @@ GameObject:
   - component: {fileID: 7328741373106442524}
   - component: {fileID: 7286752251033143568}
   - component: {fileID: 231457315241673592}
-  - component: {fileID: 4628667870510421914}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -254,7 +253,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -377320307
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c1b413d3d3c3d6d4c89f1029c59e2592, type: 3}
   m_Color: {r: 0, g: 0.75, b: 1, a: 1}
@@ -289,30 +288,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4628667870510421914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174580132879211512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f899a04990ec2a44991d856a09daa34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotationSpeed: 500
-  bulletPrefab: {fileID: 7342037630946578433, guid: e2e71b2dd2d131b428856da0e9ba6d83, type: 3}
-  frontFirePoint: {fileID: 7861519860018358774}
-  backFirePoint: {fileID: 1090939892260165531}
-  leftFirePoint: {fileID: 6364259442510357827}
-  rightFirePoint: {fileID: 773825730978835109}
-  targetingRange: 8
-  fireRate: 2
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &3209530653787070236
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +395,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -377320307
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b94e31296c8549b458b49b125d6d0f54, type: 3}
   m_Color: {r: 0.5424528, g: 1, b: 0.8775942, a: 1}
@@ -539,7 +514,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -377320307
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b94e31296c8549b458b49b125d6d0f54, type: 3}
   m_Color: {r: 0.5424528, g: 1, b: 0.8775942, a: 1}

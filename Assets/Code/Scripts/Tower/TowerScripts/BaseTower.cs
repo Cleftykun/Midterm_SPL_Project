@@ -12,7 +12,8 @@ public abstract class BaseTower : MonoBehaviour
         First,
         Last,
         Strong,
-        Weak
+        Weak,
+        Near
     }
 
     [Header("Tower Data")]
@@ -136,6 +137,10 @@ public abstract class BaseTower : MonoBehaviour
                 break;
             case TargetingMode.Weak:
                 target = enemies.OrderBy(e => e.GetPlayerDamage()).FirstOrDefault()?.transform;
+                break;
+            case TargetingMode.Near:
+                target = enemies.OrderBy(e => Vector2.Distance(transform.position, e.transform.position))
+                                .FirstOrDefault()?.transform;
                 break;
         }
     }

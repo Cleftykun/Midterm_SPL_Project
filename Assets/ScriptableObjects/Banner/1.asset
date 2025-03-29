@@ -17,3 +17,7 @@ MonoBehaviour:
   allTowers:
   - {fileID: 11400000, guid: dffd475119e7b8e4d94c8e371f438e15, type: 2}
   - {fileID: 11400000, guid: 327cbd42410488345827a6294d8e3816, type: 2}
+  - {fileID: 11400000, guid: cb047ab087d09e84c81c7a882d79c1b6, type: 2}
+  - {fileID: 11400000, guid: 88081ba9b9ad3ce408b294e91347dedd, type: 2}
+  - {fileID: 11400000, guid: 8ccbd4fc9c0ae7f4d98f588b5e818f64, type: 2}
+  - {fileID: 11400000, guid: ae7b2f30e61c52049b0bf6b26d7a43d5, type: 2}
