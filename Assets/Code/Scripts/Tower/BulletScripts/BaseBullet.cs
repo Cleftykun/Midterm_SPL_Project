@@ -11,7 +11,7 @@ public abstract class BaseBullet : MonoBehaviour
 
     protected int damage;
     protected Transform target;
-    private float elapsedTime = 0f;
+    public float elapsedTime = 0f;
 
     protected virtual void Start()
     {

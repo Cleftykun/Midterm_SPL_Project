@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
-  m_Name: Lisp Tower
+  m_Name: IBM Tower
   m_EditorClassIdentifier: 
-  towerID: 22
-  towerName: Lisp Tower
-  towerPrefab: {fileID: 5135398175848266765, guid: c1fc4d33ab1d350439f1d7b1b827d773, type: 3}
+  towerID: 0
+  towerName: 
+  towerPrefab: {fileID: 0}
   icon: {fileID: 0}
-  rarity: R
+  rarity: 
   cost: 0
   isWaterTower: 0

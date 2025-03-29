@@ -160,7 +160,7 @@ public abstract class BaseTower : MonoBehaviour
             currentAttackSpeed = attackSpeed + (upgradeMultiplier * upgradeLevel);
             damage = Mathf.RoundToInt(originalDamage + (upgradeMultiplier * upgradeLevel));
         }
-
+        ResetTargetingMode();
     }
     private bool isSlowed = false;
     public virtual void ApplySlow(float factor, float duration)
