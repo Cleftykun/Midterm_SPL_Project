@@ -32,8 +32,8 @@ public abstract class BaseBullet : MonoBehaviour
 
         if (target != null)
         {
-            Vector2 direction = (target.position - transform.position).normalized;
-            rb.linearVelocity = direction * bulletSpeed;
+                Vector2 direction = (target.position - transform.position).normalized;
+                rb.linearVelocity = direction * bulletSpeed;
         }
     }
 

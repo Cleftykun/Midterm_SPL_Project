@@ -51,7 +51,6 @@ public class Plot : MonoBehaviour
             Debug.LogWarning("Cannot Be Placed Here");
             return;
         }
-        Debug.Log(BuildManager.Instance.GetSelectedTower());
         TowerData towerToBuild = BuildManager.Instance.GetSelectedTower(); 
         if (towerToBuild == null)
         {
