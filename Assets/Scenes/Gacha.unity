@@ -3076,10 +3076,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6866443917352218036, guid: 6110c4e4197ef7c41af74fea76b518d6, type: 3}
-      propertyPath: _animationName
-      value: shoot
+    - target: {fileID: 8221209146950619090, guid: 6110c4e4197ef7c41af74fea76b518d6, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2030180768}
+    - target: {fileID: 8221209146950619090, guid: 6110c4e4197ef7c41af74fea76b518d6, type: 3}
+      propertyPath: zoomInSize
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8221209146950619090, guid: 6110c4e4197ef7c41af74fea76b518d6, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 741153527}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3936,7 +3944,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1458605131}
   m_HandleRect: {fileID: 1458605130}
   m_Direction: 0
-  m_Value: -0.0000011584457
+  m_Value: -0.0000014743854
   m_Size: 0.5576156
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7119,7 +7127,7 @@ MonoBehaviour:
     toggleKey: 283
   - targetObject: {fileID: 1663707204}
     toggleKey: 284
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 2030180763}
 --- !u!1001 &793856022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13776,7 +13784,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d2ff444ae19a8240971ba5fd3f2c992, type: 2}
   - {fileID: 11400000, guid: ca5207bd33e9bf54784103497012a55a, type: 2}
   - {fileID: 11400000, guid: 5f2e7a7adfaedd04dba263e23d47be59, type: 2}
-  - {fileID: 11400000, guid: 63fb6c4b2b1c88e489b180d4632236cb, type: 2}
 --- !u!114 &1779314878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14027,7 +14034,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2016994373}
   m_HandleRect: {fileID: 2016994372}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
