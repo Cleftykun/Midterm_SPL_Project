@@ -16,3 +16,5 @@ MonoBehaviour:
   bannerImage: {fileID: -7662787244227853690, guid: 8c5f167ff18212940999ad7e9415c37d, type: 3}
   allTowers:
   - {fileID: 11400000, guid: 327cbd42410488345827a6294d8e3816, type: 2}
+  - {fileID: 11400000, guid: dffd475119e7b8e4d94c8e371f438e15, type: 2}
+  - {fileID: 11400000, guid: 270fa531c7fa3db4d93bf1b31f72c338, type: 2}

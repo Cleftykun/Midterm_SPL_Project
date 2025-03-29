@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
-  m_Name: Algol Tower
+  m_Name: BASIC Tower
   m_EditorClassIdentifier: 
-  towerID: 9
-  towerName: Algol Tower
-  towerPrefab: {fileID: 5135398175848266765, guid: 25dea7bfa7ed1804a948b2cfdba3176d, type: 3}
+  towerID: 7
+  towerName: BASIC Tower
+  towerPrefab: {fileID: 5135398175848266765, guid: 5e4d6ee5a6ee1ce4d99368d1f235548e, type: 3}
   icon: {fileID: 0}
-  rarity: R
+  rarity: C
   cost: 0
   isWaterTower: 0
