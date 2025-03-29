@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c1b413d3d3c3d6d4c89f1029c59e2592, type: 3}
-  m_Color: {r: 0.30204362, g: 0.23921569, b: 0.39607844, a: 1}
+  m_Color: {r: 0.7820755, g: 0.6367924, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: -4850690904493760117}
   - component: {fileID: 2862789053237842441}
   m_Layer: 9
-  m_Name: BASIC Tower
+  m_Name: Pascal Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,12 +236,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93048b52f5a5084ba948a9cb683acb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerName: Basic Tower
+  towerName: Pascal Tower
   attackRange: 3
-  attackSpeed: 1
+  attackSpeed: 3
   originalDamage: 20
   rotationSpeed: 1000
-  bulletPrefab: {fileID: 7342037630946578433, guid: dda6b0bdbaac0b949b98fc8eb5caedc3, type: 3}
+  bulletPrefab: {fileID: 7342037630946578433, guid: efb991e94c98fe542aa7900626ea39b1, type: 3}
   collider2D: {fileID: -4850690904493760117}
   turretRotationPoint: {fileID: 2234737151534793583}
   enemyMask:

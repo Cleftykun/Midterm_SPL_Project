@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BasicTower : BaseTower
+public class AssemblyTower : BaseTower
 {
     public override void Shoot()
     {

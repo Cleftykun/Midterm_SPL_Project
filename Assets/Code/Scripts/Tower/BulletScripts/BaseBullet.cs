@@ -11,6 +11,7 @@ public abstract class BaseBullet : MonoBehaviour
 
     protected int damage;
     protected Transform target;
+    private float elapsedTime = 0f;
 
     protected virtual void Start()
     {
@@ -19,6 +20,13 @@ public abstract class BaseBullet : MonoBehaviour
 
     protected virtual void Update()
     {
+        elapsedTime += Time.deltaTime;
+        if (elapsedTime >= bulletLifetime)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         if (target == null)
         {
             Destroy(gameObject);

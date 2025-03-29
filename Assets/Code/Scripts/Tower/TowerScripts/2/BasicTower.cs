@@ -20,8 +20,14 @@ public class BasicTower : BaseTower
         Debug.Log($"{towerName} Damage Boost Applied: {damage} (Boost Factor: {boostFactor})");
     }
 
-    protected override void OnDestroy()
+    public override void Shoot()
     {
-        basicTowerCount = Mathf.Max(0, basicTowerCount - 1);
+        GameObject bullet = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        BaseBullet bulletScript = bullet.GetComponent<BaseBullet>();
+
+        if (bulletScript != null)
+        {
+            bulletScript.Initialize(target, damage); 
+        }
     }
 }

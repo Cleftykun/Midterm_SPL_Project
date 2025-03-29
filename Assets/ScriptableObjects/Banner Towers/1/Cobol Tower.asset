@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
   m_Name: Cobol Tower
   m_EditorClassIdentifier: 
-  towerID: 4
+  towerID: 3
   towerName: Cobol Tower
   towerPrefab: {fileID: 5135398175848266765, guid: d8e2818b4db5ef244b1f2a5bac6c33da, type: 3}
   icon: {fileID: 0}
   rarity: R
-  cost: 50
+  cost: 0
   isWaterTower: 0

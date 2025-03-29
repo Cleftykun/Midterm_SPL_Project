@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
   m_Name: ENIACTowerData
   m_EditorClassIdentifier: 
-  towerID: 5
+  towerID: 4
   towerName: ENIAC Tower
   towerPrefab: {fileID: 5135398175848266765, guid: ab925aabbaab63b4d84b240ca08f8001, type: 3}
+  icon: {fileID: 0}
   rarity: S
   cost: 0
   isWaterTower: 0

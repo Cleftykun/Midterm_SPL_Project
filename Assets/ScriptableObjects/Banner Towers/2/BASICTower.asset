@@ -15,6 +15,7 @@ MonoBehaviour:
   towerID: 7
   towerName: BASIC Tower
   towerPrefab: {fileID: 5135398175848266765, guid: 5e4d6ee5a6ee1ce4d99368d1f235548e, type: 3}
+  icon: {fileID: 0}
   rarity: C
-  cost: 50
+  cost: 0
   isWaterTower: 0
