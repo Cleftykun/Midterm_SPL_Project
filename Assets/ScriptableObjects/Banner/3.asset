@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   bannerName: Compiled Evolution
-  bannerImage: {fileID: 0}
+  bannerSplash: {fileID: 989423273, guid: bc285412f5db14f42988eeae3f5b9475, type: 3}
+  bannerIcon: {fileID: -8465836497263030070, guid: 809e37807fb4a9d4d8e909464b63f0ff, type: 3}
   allTowers:
   - {fileID: 11400000, guid: 708f0ed6d326f07498a5b50721d1433f, type: 2}
   - {fileID: 11400000, guid: 586683840a0b00a4fba08e3d201dc500, type: 2}
   - {fileID: 11400000, guid: 463fd903f903a6e4a9ed136762a755bf, type: 2}
+  - {fileID: 11400000, guid: ea334d1a1d97d8e44bd702ee73776425, type: 2}
