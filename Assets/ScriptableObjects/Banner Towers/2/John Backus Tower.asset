@@ -16,6 +16,6 @@ MonoBehaviour:
   towerName: John Backus Tower
   towerPrefab: {fileID: 5135398175848266765, guid: 046d0a5199c9b7a428eea66c3264aa73, type: 3}
   icon: {fileID: 0}
-  rarity: C
+  rarity: U
   cost: 0
   isWaterTower: 0

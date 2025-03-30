@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
-  m_Name: Jean Sammet Tower
+  m_Name: B Tower
   m_EditorClassIdentifier: 
-  towerID: 13
-  towerName: Jean Sammet Tower
-  towerPrefab: {fileID: 5135398175848266765, guid: aeec7d3240cf1ac419c4533f90cb18cc, type: 3}
+  towerID: 0
+  towerName: 
+  towerPrefab: {fileID: 0}
   icon: {fileID: 0}
-  rarity: C
+  rarity: 
   cost: 0
   isWaterTower: 0

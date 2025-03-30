@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
-  m_Name: Jean Sammet Tower
+  m_Name: Simula Tower
   m_EditorClassIdentifier: 
-  towerID: 13
-  towerName: Jean Sammet Tower
-  towerPrefab: {fileID: 5135398175848266765, guid: aeec7d3240cf1ac419c4533f90cb18cc, type: 3}
+  towerID: 15
+  towerName: Simula Tower
+  towerPrefab: {fileID: 5135398175848266765, guid: 4be8db50803586744a40435aa0255a03, type: 3}
   icon: {fileID: 0}
   rarity: C
   cost: 0

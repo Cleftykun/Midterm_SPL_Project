@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2234737151534793583}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c1b413d3d3c3d6d4c89f1029c59e2592, type: 3}
-  m_Color: {r: 0.22264157, g: 0, b: 0.5566038, a: 1}
+  m_Color: {r: 0.735849, g: 0.022995282, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -154,9 +154,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7708580422600399515}
   - component: {fileID: -4850690904493760117}
-  - component: {fileID: 2485829388058307297}
+  - component: {fileID: 7898283085944038811}
   m_Layer: 9
-  m_Name: IBM Tower
+  m_Name: B Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,7 +224,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2485829388058307297
+--- !u!114 &7898283085944038811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,16 +233,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5135398175848266765}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e91394a338495b429693b8bdc7f1fe4, type: 3}
+  m_Script: {fileID: 11500000, guid: ea8edff97d887a144895c2cb65db1d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerName: IBMS 360 Tower
-  baseAttackRange: 5
-  baseAttackSpeed: 3
-  baseDamage: 50
+  towerName: B Tower
+  baseAttackRange: 10
+  baseAttackSpeed: 2.5
+  baseDamage: 25
   rotationSpeed: 1000
-  bulletPrefab: {fileID: 7342037630946578433, guid: af302cc1fa6936e4d9488a4bcb6ced3e, type: 3}
-  towerClassification: 3
+  bulletPrefab: {fileID: 8909228605548159259, guid: 9e1ddb1866ed8914a84c90e4b402de51, type: 3}
+  towerClassification: 4
   turretRotationPoint: {fileID: 2234737151534793583}
   enemyMask:
     serializedVersion: 2
@@ -252,11 +252,8 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
-  attackSpeedBoost: 0.2
-  damageBoost: 0.15
-  overclockDuration: 10
-  overclockMultiplier: 3
-  explosionRadius: 2
+  compileTime: 3
+  maxDamageMultiplier: 2
 --- !u!1 &5148012191503450218
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +312,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.314, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2234737151534793583}
@@ -365,7 +362,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b94e31296c8549b458b49b125d6d0f54, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.495283, g: 0.6065608, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
