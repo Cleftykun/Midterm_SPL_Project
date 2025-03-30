@@ -2,35 +2,48 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public Transform player;  // Assign the player in the inspector
+    public Transform player;  
 
-    private Vector3 lastValidPosition;
+    public Vector3 defaultOffset = new Vector3(0, 0, 0); 
+    public Vector3 phoneOffset = new Vector3(3, 0, 0);  
+
+    private Vector3 currentOffset;
+    private Vector3 velocity = Vector3.zero; // For smooth UI transition
+
+    public float uiSmoothTime = 0.3f; // Adjust for UI smoothness
+
+    private bool isPhoneOpen = false;
+
+    public Camera playerCamera;
+    public float defaultZoom = 5f;
+    public float phoneZoom = 3.5f;
+    private float currentZoom;
+    private float zoomVelocity = 0f;
 
     void Start()
     {
-        lastValidPosition = transform.position;
+        currentOffset = defaultOffset;
+        currentZoom = defaultZoom;
     }
 
     void LateUpdate()
     {
         if (player == null) return;
 
-        // Move smoothly towards the player
-        Vector3 targetPosition = new Vector3(player.position.x, player.position.y, transform.position.z);
+        // Instantly track the player, NO delay
+        Vector3 basePosition = player.position;
 
-        // Move camera to the new position
-        transform.position = targetPosition;
+        // Smoothly adjust only the offset and zoom
+        currentOffset = Vector3.SmoothDamp(currentOffset, isPhoneOpen ? phoneOffset : defaultOffset, ref velocity, uiSmoothTime);
+        currentZoom = Mathf.SmoothDamp(currentZoom, isPhoneOpen ? phoneZoom : defaultZoom, ref zoomVelocity, uiSmoothTime);
+
+        // Apply updated camera position & zoom
+        transform.position = basePosition + currentOffset;
+        playerCamera.orthographicSize = currentZoom;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    public void TogglePhone(bool open)
     {
-    
-        transform.position = lastValidPosition;
-
-    }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        lastValidPosition = transform.position;
+        isPhoneOpen = open;
     }
 }

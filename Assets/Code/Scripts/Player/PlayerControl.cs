@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Camera Control")]
     public Camera playerCamera;
+    public PlayerCamera PlayerCameraScript;
     public float zoomDuration = 1;
     public float zoomInSize = 0.5f;
     public float zoomOutSize = 2f;
@@ -24,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Test")]
     public PlayerCharacter player;
+    bool isPhoneOpen = false;
+
     void Start()
     {
         speed = moveSpeed;
@@ -134,14 +137,27 @@ public class PlayerMovement : MonoBehaviour
         {
             animationstate.SetAnimation(4, "phone_out", false);
             animationstate.AddAnimation(2, "[face]idle", true, 0.5f);
-            StartZoom(zoomInSize);
+            // StartZoom(zoomInSize);
+            PlayerCameraScript.TogglePhone(true);
+        }
+    }
+    public void PhoneEquipSide()
+    {
+        Spine.TrackEntry current = animationstate.GetCurrent(4);
+        if (current == null || current.Animation.Name != "phone_landscape")
+        {
+            animationstate.SetAnimation(4, "phone_landscape", false);
+            animationstate.AddAnimation(2, "[face]idle", true, 0.5f);
+            // StartZoom(zoomInSize);
+            PlayerCameraScript.TogglePhone(true);
         }
     }
 
     public void PhoneUnEquip()
     {
 
-        StartZoom(zoomOutSize);
+        // StartZoom(zoomOutSize);
+        PlayerCameraScript.TogglePhone(false);
         StartCoroutine(FadeOutTrack(4, 0.2f));
 
         animationstate.ClearTrack(2);
@@ -153,6 +169,7 @@ public class PlayerMovement : MonoBehaviour
             StopCoroutine(zoomCoroutine); // Stop smoothly instead of snapping
 
         zoomCoroutine = StartCoroutine(ZoomCamera(targetZoom));
+        
     }
 
     // 🔥 Improved Smooth Zoom Transition

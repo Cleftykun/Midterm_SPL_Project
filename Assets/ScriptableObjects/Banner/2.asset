@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50cafbfd2dd323a4da8c1dce20519af4, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  bannerName: Rise of High-Level Languages
-  bannerImage: {fileID: -7662787244227853690, guid: 8c5f167ff18212940999ad7e9415c37d, type: 3}
+  bannerName: Computing Banner
+  bannerSplash: {fileID: 4851320312923018706, guid: 409bfac28a859ce4ca6d241841a23be8, type: 3}
+  bannerIcon: {fileID: -7662787244227853690, guid: 8c5f167ff18212940999ad7e9415c37d, type: 3}
   allTowers:
   - {fileID: 11400000, guid: 327cbd42410488345827a6294d8e3816, type: 2}
   - {fileID: 11400000, guid: dffd475119e7b8e4d94c8e371f438e15, type: 2}

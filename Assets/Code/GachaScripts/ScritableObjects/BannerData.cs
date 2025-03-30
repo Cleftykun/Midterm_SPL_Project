@@ -6,8 +6,17 @@ using System.Linq;
 public class BannerData : ScriptableObject
 {
     public string bannerName;
-    public Sprite bannerImage;
+    public Sprite bannerSplash;
+    public Sprite bannerIcon;
     public TowerData[] allTowers; // Store all towers, filtering by rarity at runtime
+    private void OnEnable()
+    {
+        if (bannerSplash == null)
+            bannerSplash = Resources.Load<Sprite>("Defaults/DefaultBannerSplash");
+
+        if (bannerIcon == null)
+            bannerIcon = Resources.Load<Sprite>("Defaults/DefaultBannerIcon");
+    }
 
     public TowerData GetRandomTower()
     {
