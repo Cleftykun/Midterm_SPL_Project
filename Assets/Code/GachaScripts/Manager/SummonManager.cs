@@ -14,10 +14,10 @@ public class SummonManager : MonoBehaviour
     public void SetSelectedBanner(BannerData _banner)
     {
         selectedBanner = _banner;
-        if (ActiveBannerDisplay != null && selectedBanner.bannerImage != null)
+        if (ActiveBannerDisplay != null && selectedBanner.bannerSplash != null)
         {
             // Get the Image component directly from the Panel
-            ActiveBannerDisplay.GetComponent<Image>().sprite = selectedBanner.bannerImage;
+            ActiveBannerDisplay.GetComponent<Image>().sprite = selectedBanner.bannerSplash;
             ActiveBannerDisplay.SetActive(true);
         }
     }

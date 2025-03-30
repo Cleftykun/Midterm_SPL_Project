@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -6,7 +7,7 @@ public class ScreenKey
 {
     public GameObject targetObject;
     public KeyCode toggleKey;
-    
+    public Button toggleButton; // Optional UI button
 }
 
 public class PhoneManager : MonoBehaviour
@@ -23,6 +24,13 @@ public class PhoneManager : MonoBehaviour
         {
             if (pair.targetObject != null)
                 SetVisibility(pair.targetObject, false);
+
+            // If a button is assigned, link it to ToggleScreen()
+            if (pair.toggleButton != null)
+            {
+                ScreenKey capturedPair = pair; // Capture to avoid closure issues
+                pair.toggleButton.onClick.AddListener(() => ToggleScreen(capturedPair));
+            }
         }
         SetVisibility(PhoneUI, false);
     }
@@ -33,20 +41,29 @@ public class PhoneManager : MonoBehaviour
         {
             if (Input.GetKeyDown(pair.toggleKey) && pair.targetObject != null)
             {
-                if (activeScreen == pair.targetObject && IsVisible(pair.targetObject))
-                {
-                    SetVisibility(PhoneUI, false);
-                    SetVisibility(activeScreen, false);
-                    activeScreen = null;
-                    playerMovement.PhoneUnEquip();
-                }
-                else
-                {
-                    SetVisibility(PhoneUI, true);
-                    Activate(pair.targetObject);
-                    playerMovement.PhoneEquip();
-                }
+                ToggleScreen(pair);
             }
+        }
+    }
+
+    void ToggleScreen(ScreenKey pair)
+    {
+        if (activeScreen == pair.targetObject && IsVisible(pair.targetObject))
+        {
+            SetVisibility(PhoneUI, false);
+            SetVisibility(activeScreen, false);
+            activeScreen = null;
+            playerMovement.PhoneUnEquip();
+        }
+        else
+        {
+            SetVisibility(PhoneUI, true);
+            Activate(pair.targetObject);
+
+            if (pair.toggleKey == KeyCode.F3)
+                playerMovement.PhoneEquipSide();
+            else
+                playerMovement.PhoneEquip();
         }
     }
 
