@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
   m_Name: B Tower
   m_EditorClassIdentifier: 
-  towerID: 0
-  towerName: 
-  towerPrefab: {fileID: 0}
+  towerID: 16
+  towerName: B Tower
+  towerPrefab: {fileID: 5135398175848266765, guid: d6058594abeb4c14a9540d2069116a47, type: 3}
   icon: {fileID: 0}
-  rarity: 
+  rarity: C
   cost: 0
   isWaterTower: 0

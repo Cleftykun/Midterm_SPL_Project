@@ -16,6 +16,6 @@ MonoBehaviour:
   towerName: IBM Tower
   towerPrefab: {fileID: 5135398175848266765, guid: b1e2b869430a1304b837d80bf80cac41, type: 3}
   icon: {fileID: 0}
-  rarity: C
+  rarity: S
   cost: 0
   isWaterTower: 0
