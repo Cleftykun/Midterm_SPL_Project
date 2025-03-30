@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Scheme Tower
   m_EditorClassIdentifier: 
   towerID: 30
-  towerName: Turbo Pascal Tower
-  towerPrefab: {fileID: 5135398175848266765, guid: c73fbeb7a3f52414696074248daf5895, type: 3}
+  towerName: Scheme Tower
+  towerPrefab: {fileID: 5135398175848266765, guid: 43a127f5340fee745a12372702f8b18f, type: 3}
   icon: {fileID: 0}
   rarity: C
   cost: 0
