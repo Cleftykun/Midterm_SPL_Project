@@ -15,7 +15,10 @@ public class DijkstraTower : BaseTower
     [SerializeField] private Transform turret1;
     [SerializeField] private Transform turret2;
 
- 
+    public DijkstraTower()
+    {
+        towerClassification = Classifaction.AlgorithmicTheoreticalCS;
+    }
 
     public override void Shoot()
     {

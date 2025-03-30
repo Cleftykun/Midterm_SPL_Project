@@ -8,6 +8,11 @@ public class PLITower : BaseTower
     private float attackCooldown;
     private float baseAttackCooldown = 1f; // Set default attack speed
 
+    public PLITower()
+    {
+        towerClassification = Classifaction.StructuredProcedural;
+    }
+
     public override void Shoot()
     {
         if (target == null) return;

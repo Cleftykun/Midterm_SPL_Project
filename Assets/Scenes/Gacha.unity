@@ -3950,6 +3950,8 @@ MonoBehaviour:
   m_Direction: 0
   m_Value: -0.0000011584455
   m_Size: 0.5576155
+  m_Value: -0.000001579699
+  m_Size: 0.55761564
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13435,6 +13437,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 88081ba9b9ad3ce408b294e91347dedd, type: 2}
   - {fileID: 11400000, guid: 7f9384b3c00b7db4287dec6ee53f9a8f, type: 2}
   - {fileID: 11400000, guid: 3f38424349632d745b3c2043a05232c4, type: 2}
+  - {fileID: 11400000, guid: 689ccac5230f7704fa2e333765374057, type: 2}
 --- !u!114 &1779314878
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,11 @@ public class AdaTower : BaseTower
     private float attackSpeedIncrease = 0.2f;
     private float speedResetTime = 10f;
 
+    public AdaTower()
+    {
+        towerClassification = Classifaction.StructuredProcedural;
+    }
+
     protected override void Start()
     {
         base.Start();

@@ -14,6 +14,11 @@ public class PrologTower : BaseTower
     private float gateTimer = 0f;
     private Queue<GameObject> activeGates = new Queue<GameObject>();
 
+    public PrologTower()
+    {
+        towerClassification = Classifaction.FunctionalLogicBased;
+    }
+
     protected override void Update()
     {
         if (isDisabled) return;
