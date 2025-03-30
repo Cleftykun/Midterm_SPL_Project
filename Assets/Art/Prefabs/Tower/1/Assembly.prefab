@@ -30,7 +30,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 2234737151534793583}
   m_Father: {fileID: 7708580422600399515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7286752251033143568
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c1b413d3d3c3d6d4c89f1029c59e2592, type: 3}
-  m_Color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0.90588236}
+  m_Color: {r: 0.4392157, g: 0.5019608, b: 0.5647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -134,14 +135,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834109039123840673}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4252504999087472688}
   - {fileID: 7173730418355606264}
-  m_Father: {fileID: 7708580422600399515}
+  m_Father: {fileID: 7328741373106442524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5135398175848266765
 GameObject:
@@ -152,10 +153,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7708580422600399515}
-  - component: {fileID: 1860752405312902226}
-  - component: {fileID: 1688643982363827210}
+  - component: {fileID: -4850690904493760117}
+  - component: {fileID: 7592025511997316901}
   m_Layer: 9
-  m_Name: Machine Code Tower
+  m_Name: Assembly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,10 +176,9 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7328741373106442524}
-  - {fileID: 2234737151534793583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1860752405312902226
+--- !u!61 &-4850690904493760117
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,7 +224,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1688643982363827210
+--- !u!114 &7592025511997316901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,19 +236,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83aee735f1d7e141b7b3fde636f212a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerName: Machine Code Tower
-  attackRange: 3
-  attackSpeed: 5
-  originalDamage: 5
+  towerName: Assembly Tower
+  baseAttackRange: 1
+  baseAttackSpeed: 1
+  baseDamage: 20
   rotationSpeed: 1000
   bulletPrefab: {fileID: 7342037630946578433, guid: dda6b0bdbaac0b949b98fc8eb5caedc3, type: 3}
-  collider2D: {fileID: 1860752405312902226}
+  towerClassification: 4
   turretRotationPoint: {fileID: 2234737151534793583}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
   firingPoint: {fileID: 7173730418355606264}
-  towerUIPanel: {fileID: 0}
+  currentAttackRange: 0
+  currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
 --- !u!1 &5148012191503450218
@@ -276,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 5148012191503450218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.757, y: 0.021, z: 0}
+  m_LocalPosition: {x: 0.931, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -308,8 +309,8 @@ Transform:
   m_GameObject: {fileID: 6509892617491730181}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.254, y: 0.032, z: 0}
-  m_LocalScale: {x: 0.6699543, y: 0.67256, z: 0.8}
+  m_LocalPosition: {x: 0.314, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2234737151534793583}
@@ -359,7 +360,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b94e31296c8549b458b49b125d6d0f54, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4392157, g: 0.5019608, b: 0.5647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

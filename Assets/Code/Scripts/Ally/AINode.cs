@@ -19,8 +19,8 @@ public class AINode : MonoBehaviour
             return;
         }
 
-        rb.isKinematic = true; // Prevent physics issues
-
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        
         FindTarget();
         Destroy(gameObject, lifetime);
     }

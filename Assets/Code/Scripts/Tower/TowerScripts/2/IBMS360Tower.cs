@@ -65,8 +65,8 @@ public class IBMS360Tower : BaseTower, IAbility
 
     private void ResetBuffs()
     {
-        currentAttackSpeed = attackSpeed;
-        List<BaseTower> allTowers = new List<BaseTower>(FindObjectsOfType<BaseTower>());
+        currentAttackSpeed = baseAttackSpeed;
+        List<BaseTower> allTowers = new List<BaseTower>(FindObjectsByType<BaseTower>(FindObjectsSortMode.None));
         foreach (BaseTower tower in allTowers)
         {
             tower.Reset();           
@@ -76,11 +76,12 @@ public class IBMS360Tower : BaseTower, IAbility
 
     private void ApplyGlobalBuff()
     {
-        List<BaseTower> allTowers = new List<BaseTower>(FindObjectsOfType<BaseTower>());
+        //Buffs Every Towers attack speed and damage
+        List<BaseTower> allTowers = new List<BaseTower>(FindObjectsByType<BaseTower>(FindObjectsSortMode.None));
         foreach (BaseTower tower in allTowers)
         {
-            tower.SetAttackSpeed(tower.GetAttackSpeed() * (tower.GetAttackSpeed() + globalAttackBoost));
-            tower.damage = Mathf.RoundToInt(tower.damage * (tower.damage + globalAttackBoost));
+            tower.SetAttackSpeed(tower.GetAttackSpeed() + (tower.GetAttackSpeed() * globalAttackBoost));
+            tower.SetDamage(tower.GetDamage() + Mathf.RoundToInt(tower.GetDamage() * globalAttackBoost));
         }
     }
 

@@ -237,18 +237,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerName: FORTRAN Tower
-  attackRange: 10
-  attackSpeed: 0.25
-  originalDamage: 100
+  baseAttackRange: 10
+  baseAttackSpeed: 0.25
+  baseDamage: 100
   rotationSpeed: 1000
   bulletPrefab: {fileID: 7342037630946578433, guid: dda6b0bdbaac0b949b98fc8eb5caedc3, type: 3}
-  collider2D: {fileID: 3477897146134364971}
+  towerClassification: 6
   turretRotationPoint: {fileID: 2234737151534793583}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
   firingPoint: {fileID: 7173730418355606264}
-  towerUIPanel: {fileID: 0}
+  currentAttackRange: 0
+  currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
 --- !u!1 &5148012191503450218

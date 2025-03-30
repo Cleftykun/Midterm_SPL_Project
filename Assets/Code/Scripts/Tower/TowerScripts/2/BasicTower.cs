@@ -16,7 +16,7 @@ public class BasicTower : BaseTower
     private void ApplyStackingDamageBoost()
     {
         float boostFactor = 1f + (damageBoostPerTower * (basicTowerCount - 1));
-        damage = Mathf.RoundToInt(originalDamage * boostFactor);
+        damage = Mathf.RoundToInt(baseDamage * boostFactor);
         Debug.Log($"{towerName} Damage Boost Applied: {damage} (Boost Factor: {boostFactor})");
     }
 

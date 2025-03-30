@@ -13352,6 +13352,7 @@ GameObject:
   - component: {fileID: 1779314875}
   - component: {fileID: 1779314881}
   - component: {fileID: 1779314882}
+  - component: {fileID: 1779314883}
   m_Layer: 0
   m_Name: Level Manager
   m_TagString: Untagged
@@ -13426,6 +13427,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 327cbd42410488345827a6294d8e3816, type: 2}
   - {fileID: 11400000, guid: dffd475119e7b8e4d94c8e371f438e15, type: 2}
   - {fileID: 11400000, guid: 270fa531c7fa3db4d93bf1b31f72c338, type: 2}
+  - {fileID: 11400000, guid: 3fb07568d40556340be6ce2dcd0d7f1a, type: 2}
+  - {fileID: 11400000, guid: d582c67d284ae724da4d7abd6c5531d1, type: 2}
+  - {fileID: 11400000, guid: cb047ab087d09e84c81c7a882d79c1b6, type: 2}
+  - {fileID: 11400000, guid: ae7b2f30e61c52049b0bf6b26d7a43d5, type: 2}
+  - {fileID: 11400000, guid: 8ccbd4fc9c0ae7f4d98f588b5e818f64, type: 2}
+  - {fileID: 11400000, guid: 88081ba9b9ad3ce408b294e91347dedd, type: 2}
+  - {fileID: 11400000, guid: 7f9384b3c00b7db4287dec6ee53f9a8f, type: 2}
 --- !u!114 &1779314878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13439,7 +13447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingMoney: 2000
-  startingHealth: 500
+  startingHealth: 9999999
   startingCorruption: 0
   currentHPBar: {fileID: 714165091}
   delayedHPBar: {fileID: 777901583}
@@ -13589,6 +13597,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 684840075}
+--- !u!114 &1779314883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779314874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0328c5a471cc96468ea86e39e8ac71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1779339703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7190236580668780857, guid: 517b0329170f0464589229a5f329a121, type: 3}
@@ -15482,19 +15502,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerName: Player
-  attackRange: 4
-  attackSpeed: 5
-  originalDamage: 10
+  baseAttackRange: 0
+  baseAttackSpeed: 0
+  baseDamage: 0
   rotationSpeed: 1000
   bulletPrefab: {fileID: 7342037630946578433, guid: 606e75ed59332b44ca34c7148da48667, type: 3}
-  collider2D: {fileID: 0}
+  towerClassification: 1
   turretRotationPoint: {fileID: 1930855186}
   enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   firingPoint: {fileID: 1159844956}
-  towerUIPanel: {fileID: 0}
-  damage: 0
   isDisabled: 0
   waveRadius: 5
 --- !u!114 &2030180775
@@ -15510,20 +15528,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerName: Main Character
-  attackRange: 4
-  attackSpeed: 5
-  originalDamage: 20
+  baseAttackRange: 0
+  baseAttackSpeed: 0
+  baseDamage: 0
   rotationSpeed: 1000
   bulletPrefab: {fileID: 7342037630946578433, guid: efb991e94c98fe542aa7900626ea39b1, type: 3}
-  collider2D: {fileID: 0}
+  towerClassification: 6
   turretRotationPoint: {fileID: 1930855186}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
   firingPoint: {fileID: 1159844956}
-  towerUIPanel: {fileID: 0}
-  damage: 0
-  isDisabled: 0
+  isDisabled: 1
 --- !u!1 &2030188343
 GameObject:
   m_ObjectHideFlags: 0

@@ -77,7 +77,7 @@ public class LevelManager : MonoBehaviour
         Debug.Log(health);
         if (health <= 0){
             Debug.Log("Game Over");
-            FindObjectOfType<GameOverUi>().ShowGameOver();
+            FindFirstObjectByType<GameOverUi>().ShowGameOver();
         }
         // Update instant HP bar
         UpdateHealthUI();

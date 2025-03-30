@@ -7,6 +7,16 @@ using System.Linq;
 
 public abstract class BaseTower : MonoBehaviour
 {
+    public enum Classifaction
+    {
+        AIOptimization,
+        AlgorithmicTheoreticalCS,
+        FunctionalLogicBased,
+        HardwareSystems,
+        LowLevelComputing,
+        ObjectOrientedModular,
+        StructuredProcedural
+    }
     public enum TargetingMode
     {
         First,
@@ -17,21 +27,20 @@ public abstract class BaseTower : MonoBehaviour
     }
 
     [Header("Tower Data")]
-    public string towerName;
-    public float attackRange;
-    public float attackSpeed;
-    public int originalDamage;
-    public float rotationSpeed = 1000f;
-    
-    public GameObject bulletPrefab;
-    
-
+    [SerializeField] public string towerName;
+    [SerializeField] public float baseAttackRange;
+    [SerializeField] public float baseAttackSpeed;
+    [SerializeField] public int baseDamage;
+    [SerializeField] public float rotationSpeed = 1000f;
+    [SerializeField] public GameObject bulletPrefab;
+    [SerializeField] public Classifaction towerClassification;
     [Header("References")]
-    [SerializeField] protected Collider2D collider2D;
     [SerializeField] protected Transform turretRotationPoint;
     [SerializeField] protected LayerMask enemyMask;
     [SerializeField] protected Transform firingPoint;
-    [SerializeField] protected GameObject towerUIPanel;
+    [SerializeField] protected float currentAttackRange;
+    [SerializeField] protected float currentAttackSpeed;
+    [SerializeField] protected int damage;
 
     protected Transform target;
     protected float timeUntilFire;
@@ -40,16 +49,12 @@ public abstract class BaseTower : MonoBehaviour
     private int upgradeLevel = 1;
     private const int maxUpgradeLevel = 10; //Up to 300%
     private const float upgradeMultiplier = 0.2f; 
-
-    protected float currentAttackRange;
-    protected float currentAttackSpeed;
-    public int damage;
     public bool isDisabled = false;
     protected virtual void Start()
     {   
-        currentAttackRange = attackRange;
-        currentAttackSpeed = attackSpeed;
-        damage = originalDamage;
+        currentAttackRange = baseAttackRange;
+        currentAttackSpeed = baseAttackSpeed;
+        damage = baseDamage;
     }
 
     protected virtual void Update()
@@ -70,6 +75,7 @@ public abstract class BaseTower : MonoBehaviour
                 timeUntilFire = 0;
             }
         }
+
     }
 
     public virtual void Shoot()
@@ -147,23 +153,26 @@ public abstract class BaseTower : MonoBehaviour
 
     public float GetAttackRange(){return currentAttackRange;}
     public float GetAttackSpeed(){return currentAttackSpeed;}
+    public Classifaction GetClassifaction(){return towerClassification;}
+    public int GetDamage(){return damage;}
     public void SetAttackRange(float aR){currentAttackRange = aR;}
     public void SetAttackSpeed(float aS){currentAttackSpeed = aS;}
+    public void SetDamage(int dmg){damage = dmg;}
     public void Reset()
     {
         if (upgradeLevel == 1) 
         {
             // Reset to base stats if it's level 1 (no upgrades applied)
-            currentAttackRange = attackRange;
-            currentAttackSpeed = attackSpeed;
-            damage = originalDamage;
+            currentAttackRange = baseAttackRange;
+            currentAttackSpeed = baseAttackSpeed;
+            damage = baseDamage;
         }
         else
         {
             // Apply upgrade multiplier if it's beyond level 1
-            currentAttackRange = attackRange + (upgradeMultiplier * upgradeLevel);
-            currentAttackSpeed = attackSpeed + (upgradeMultiplier * upgradeLevel);
-            damage = Mathf.RoundToInt(originalDamage + (upgradeMultiplier * upgradeLevel));
+            currentAttackRange = baseAttackRange + (upgradeMultiplier * upgradeLevel);
+            currentAttackSpeed = baseAttackSpeed + (upgradeMultiplier * upgradeLevel);
+            damage = Mathf.RoundToInt(baseDamage + (upgradeMultiplier * upgradeLevel));
         }
         ResetTargetingMode();
     }
@@ -217,9 +226,9 @@ public abstract class BaseTower : MonoBehaviour
 
         // Upgrade Stats
         upgradeLevel++;
-        currentAttackRange = attackRange + (upgradeMultiplier * upgradeLevel);
-        currentAttackSpeed = attackSpeed + (upgradeMultiplier * upgradeLevel);
-        damage = Mathf.RoundToInt(originalDamage + upgradeMultiplier * upgradeLevel);
+        currentAttackRange = baseAttackRange + (upgradeMultiplier * upgradeLevel);
+        currentAttackSpeed = baseAttackSpeed + (upgradeMultiplier * upgradeLevel);
+        damage = Mathf.RoundToInt(baseDamage + upgradeMultiplier * upgradeLevel);
 
         return true;
     }
@@ -245,6 +254,10 @@ public abstract class BaseTower : MonoBehaviour
     {
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, currentAttackRange);
+    }
+    private void OnValidate()
+    {
+        EditorUtility.SetDirty(this);
     }
 #endif
 }

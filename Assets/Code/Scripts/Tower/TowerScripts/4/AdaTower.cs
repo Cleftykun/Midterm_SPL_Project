@@ -3,14 +3,12 @@ using System.Collections;
 
 public class AdaTower : BaseTower
 {
-    private float baseAttackSpeed;
     private float attackSpeedIncrease = 0.2f;
     private float speedResetTime = 10f;
 
     protected override void Start()
     {
         base.Start();
-        baseAttackSpeed = currentAttackSpeed;
         StartCoroutine(IncreaseAttackSpeedOverTime());
     }
 

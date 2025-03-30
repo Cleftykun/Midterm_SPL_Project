@@ -237,18 +237,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerName: Algol Tower
-  attackRange: 3
-  attackSpeed: 2.5
-  originalDamage: 20
+  baseAttackRange: 3
+  baseAttackSpeed: 3
+  baseDamage: 25
   rotationSpeed: 1000
   bulletPrefab: {fileID: 7342037630946578433, guid: add63870308a3fd449f6245e02a98bd9, type: 3}
-  collider2D: {fileID: -4850690904493760117}
+  towerClassification: 6
   turretRotationPoint: {fileID: 2234737151534793583}
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
   firingPoint: {fileID: 7173730418355606264}
-  towerUIPanel: {fileID: 0}
+  currentAttackRange: 0
+  currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
   maxSplits: 3

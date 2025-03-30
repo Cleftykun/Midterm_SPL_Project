@@ -20,7 +20,7 @@ public class RecursiveBullet : BaseBullet
         }
     }
 
-    protected virtual void OnCollisionEnter2D(Collision2D other){
+    new void OnCollisionEnter2D(Collision2D other){
         if (other.transform == target)
         {
             ApplyDamage();

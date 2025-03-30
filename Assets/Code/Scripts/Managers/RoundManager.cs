@@ -69,5 +69,15 @@ public class RoundManager : MonoBehaviour
         roundActive = false;
         OnRoundEnd.Invoke();
         EnemySpawner.Instance.StopSpawning();
+        ResetAllTowers(); // Call the reset method on all towers
     }
+
+    private void ResetAllTowers()
+    {
+        foreach (BaseTower tower in FindObjectsOfType<BaseTower>())
+        {
+            tower.Reset(); 
+        }
+    }
+
 }
