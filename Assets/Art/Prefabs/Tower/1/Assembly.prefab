@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerName: Assembly Tower
-  baseAttackRange: 1
+  baseAttackRange: 3
   baseAttackSpeed: 1
   baseDamage: 20
   rotationSpeed: 1000

@@ -45,4 +45,5 @@ public class SmalltalkTower : BaseTower
     {
         activeSpawns.Remove(turret);
     }
+
 }
