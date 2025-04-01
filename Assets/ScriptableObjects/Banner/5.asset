@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50cafbfd2dd323a4da8c1dce20519af4, type: 3}
   m_Name: 5
   m_EditorClassIdentifier: 
-  bannerName: 
+  bannerName: Modern Computing
   bannerSplash: {fileID: 989423273, guid: bc285412f5db14f42988eeae3f5b9475, type: 3}
-  bannerIcon: {fileID: -8465836497263030070, guid: 809e37807fb4a9d4d8e909464b63f0ff, type: 3}
-  allTowers: []
+  bannerIcon: {fileID: 4130640169021434097, guid: 3979c148ab18fa84580c5973cd9fcfc1, type: 3}
+  allTowers:
+  - {fileID: 11400000, guid: c1eea4b386b1a5b42b5ed79c13fe1126, type: 2}
+  - {fileID: 11400000, guid: 50632aebea08b624c9ea774e474f30d2, type: 2}
+  - {fileID: 11400000, guid: b1b97945ee188b04f857bb6129eab092, type: 2}

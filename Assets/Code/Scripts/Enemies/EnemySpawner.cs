@@ -1,19 +1,21 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Wave Settings")]
-    [SerializeField] private WaveSerializable[] waves; // Array of waves
+    [SerializeField] private WaveSerializable[] waves;
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
+    
     private int currentWaveIndex = 0;
-
     private bool isSpawning = false;
     private bool roundActive = false;
-    private List<EnemySpawnData> spawnQueue = new List<EnemySpawnData>(); // Track enemies per wave
+    private List<EnemySpawnData> spawnQueue = new List<EnemySpawnData>();
+    private int activeEnemies = 0; // Track how many enemies are still alive
 
     public static EnemySpawner Instance;
 
@@ -23,6 +25,8 @@ public class EnemySpawner : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+
+        onEnemyDestroy.AddListener(EnemyDestroyed); // Listen for enemy deaths
     }
 
     void Update()
@@ -32,13 +36,12 @@ public class EnemySpawner : MonoBehaviour
         for (int i = spawnQueue.Count - 1; i >= 0; i--)
         {
             EnemySpawnData spawnData = spawnQueue[i];
-
             spawnData.timeSinceLastSpawn += Time.deltaTime;
 
             if (spawnData.timeSinceLastSpawn >= spawnData.spawnDelay && spawnData.remainingCount > 0)
             {
-                // Get a random path from LevelManager
-                int randomPathIndex = Random.Range(0, LevelManager.main.paths.Count); // Random index from available paths
+                // Get a random path
+                int randomPathIndex = Random.Range(0, LevelManager.main.paths.Count);
                 List<Transform> selectedPath = LevelManager.main.paths[randomPathIndex].waypoints;
 
                 // Spawn enemy
@@ -46,11 +49,12 @@ public class EnemySpawner : MonoBehaviour
                 Enemy enemyScript = enemy.GetComponent<Enemy>();
                 if (enemyScript != null)
                 {
-                    enemyScript.Initialize(randomPathIndex); // Call the initialization function
+                    enemyScript.Initialize(randomPathIndex);
                 }
 
                 spawnData.remainingCount--;
                 spawnData.timeSinceLastSpawn = 0f;
+                activeEnemies++; // Increase count when spawning
             }
 
             if (spawnData.remainingCount <= 0)
@@ -59,7 +63,6 @@ public class EnemySpawner : MonoBehaviour
             }
         }
 
-        // If all enemies are spawned and no more in the queue, stop spawning
         if (spawnQueue.Count == 0)
         {
             StopSpawning();
@@ -94,9 +97,26 @@ public class EnemySpawner : MonoBehaviour
         roundActive = false;
         spawnQueue.Clear();
     }
-    private void EnemyDestroyed(){}
-}
 
+    private void EnemyDestroyed()
+    {
+        activeEnemies--; // Decrease count when an enemy dies
+
+        if (activeEnemies <= 0 && currentWaveIndex >= waves.Length) // All enemies gone & last wave done
+        {
+            ChapterCompleted();
+        }
+    }
+
+    private void ChapterCompleted()
+    {
+        Debug.Log("Chapter Completed!");
+        PlayerPrefs.SetInt("CompletedChapter", SceneManager.GetActiveScene().buildIndex); // Save chapter
+        PlayerPrefs.Save();
+
+        // Add logic for transition to next chapter or show "Victory" screen
+    }
+}
 [System.Serializable]
 public class EnemySpawnData
 {

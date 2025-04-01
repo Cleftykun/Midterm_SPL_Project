@@ -1,0 +1,2318 @@
+fileFormatVersion: 2
+guid: 5f32c85863009444faf5211292785f53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3393421985194012519
+    second: GachaAnimation_SpriteSheet_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 800
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f6d70015bd71f20800000000000000
+      internalID: 3393421985194012519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4929f76dae8dbb41b4a1262ba891d51
+      internalID: 1480738173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59eb645bf1d6b04eb45f60f11db21ab
+      internalID: -1540636621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101d76611e41bd344b92426476f5a7cd
+      internalID: -608474801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a42f9734553d6418675075b5ae3b08
+      internalID: 455428293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f6332dbea9da74a9359cc1cc38f056
+      internalID: 1357208024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae8cdc9652868d428b4ee197ec0a590
+      internalID: -36037047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1affed80e7f0e8b4297deb94959179f4
+      internalID: 925425080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a68f97750577640898a1ff62e57d6d
+      internalID: -636435008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f5f9fe2fd346f47bad193bdfc0232e
+      internalID: 916298520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e68d192256e9654781320d75b956e5a
+      internalID: 1473276666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06609ff46d6ad64b90b2b8f528cb5e6
+      internalID: 1473279813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a104dbdb5a80148b7ffdef632e5537
+      internalID: 608651868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35233e9a16995a04cb67ab68ea92afcd
+      internalID: 1934496340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daccccba41533ae4286d3eaae0893675
+      internalID: 1811786993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72b2e346c86f5f4cbcf4293015367f5
+      internalID: -1404070699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fab424279fdf44c80905cdbd589ee6
+      internalID: 1374123864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4678f71bab4bbe04f8488cd183a50079
+      internalID: -1476736195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df9f0cd9d52cce42b17aaf22230cdd8
+      internalID: -1026290570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11870fdefe5063545abaa2f44a220f73
+      internalID: -1208790585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cba82d3d0743542b27614a7a9ba436
+      internalID: -2035606164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950756755e57d8f41a055ad032181570
+      internalID: -245571474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d466114b8c0d5d94190ed16cd4a8b5a1
+      internalID: -1234643647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf30b5804bcd11244a6c012d31498586
+      internalID: 2077045919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240609fc83490f64fb3fb2148810e633
+      internalID: 411989129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1af4f91f4d8334ea256da903da9305
+      internalID: -785775803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964c9d9e22dd6ce46b2bd98f3a4f884b
+      internalID: -1395227206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4049b82660b3c114f9dd9f6feb57c2b4
+      internalID: 1422310959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d8b8deab51f1e41a1aee68c8b8e5bf
+      internalID: -1409346164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e699b8d37d1584aa7f99649b6be94f
+      internalID: 1830739510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff829a2c1cf7fb74db266ec8ef017a24
+      internalID: -1456540363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75932a28c21379d43924e0e3a25ab801
+      internalID: -875305662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa4767674060c242a943d1d071a372d
+      internalID: 944178909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2359769352004a74e981d43563a6a51f
+      internalID: -1932387473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c531dd9fde2cd45a4a0965428c6272
+      internalID: -370400389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec74e7c64c304da4e96b52fbcc2822eb
+      internalID: 93047368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6637df2a2211a489efcc20b240ea94
+      internalID: -71167976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e34d067218aea499203944618d9c61
+      internalID: -816265173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737f79889d0bee542b14a613811460c0
+      internalID: -1341184800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411199685a655d748820e9d52f34a36a
+      internalID: 1661123987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deed8bd033e7d9d4493304f1886bc324
+      internalID: 211625510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b023b88f11ad8d14baffbc3b21abfb67
+      internalID: 1426244571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991181ae5629a8343a341d8e92026ee4
+      internalID: -1618786674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93314950b4ac7ec40a286c6d2340a3ed
+      internalID: -354583732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ccefbfb589ee5479de193247b0fb87
+      internalID: 884181417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdd381e886f956418883a74d19d3fd4
+      internalID: 1813620616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fff91653f922040a031e6e0b80ee30
+      internalID: -1628566279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4675e394a7582d48a9c7e966ee82ff3
+      internalID: -473914090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f243eb593c539ce459d5c8deb1206a94
+      internalID: 1233765162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8acb76ca2e7464c92747ea2d3f7d5c
+      internalID: -750140883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783a915fe0fae9e4cabbedc77d70cf65
+      internalID: 1635071246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec84022143787454c9571e73ec1fe406
+      internalID: -168576064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dca8d4901dd4194bba7d6e404ded90e
+      internalID: -1824423710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d8295733e642c428c98b763194ecb1
+      internalID: 129549080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7154d69f0010e4c9e5dcc16aa83ad1
+      internalID: -213599138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695f0282d49598e4eb938a6300964597
+      internalID: 1013896053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e96520149ac03047bfc1139e616a79d
+      internalID: 13879598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08615b17ea245542965b1e49950d414
+      internalID: 1330861579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fda0d5f1cddcf48a6dfaa346282ace
+      internalID: 124330761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810985d24eba03946b1d4adc2f30065c
+      internalID: -1090276576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115db1ce2ceef364db472139576b4406
+      internalID: -1751148509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f4589b51827bf4e8b66f073d8fa4f0
+      internalID: 1229332132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c422deb7e528e448fae2221627bb6c
+      internalID: -1809064502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68d338443514774889954cdcb861fa4
+      internalID: -814968351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314b5a16a4e1867408a6a3def968ba81
+      internalID: 1433617242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e541930803cc5443acff4e49235caef
+      internalID: -1816303680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2310f33c4380e2a41be8412be6cf89be
+      internalID: 11867589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13e2119b9b936c42a75201943cc6755
+      internalID: -419204193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0d2e56c4f08754b8a1f3fdf49fb510
+      internalID: -1470899762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c6d2163a2020f4ab1181d6dd0c7a55
+      internalID: -1706673126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bed66bb7882b854fb5680680f383c5d
+      internalID: -974131986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fa463b80c39284e817669c8f85ed9c
+      internalID: 2075194864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe78c9200669ae47ae55ec57173b119
+      internalID: 1632389302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbc9909459bd13428ea0ffb50dc2743
+      internalID: -1244819124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3804f95915f0144beee4d3601b204b
+      internalID: -209008399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd0d4e1615154f44acf9704dc3d9a25
+      internalID: 847565720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324148a4d12a7eb4aaf438a28ebca4d3
+      internalID: -2000471760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a761fe99984464295e1290cb4a932d
+      internalID: -681912396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cc12e6b6e16bf428c0686732159a1a
+      internalID: 32072856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c51f70b3982d9542801ba7d69790b35
+      internalID: 1994538100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e32a5fedff5c6049baa4abd81b69fbd
+      internalID: -1101074989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5942dea145a87c6469b60c66c37ea14a
+      internalID: 26048023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8c616154893fb439d9e40d58e3d2a4
+      internalID: -688561051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42500838edb81a3418c89c85f31b713b
+      internalID: 1781028760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b78ee114f9051f43b7bc8a7fe74caaf
+      internalID: -1621501004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22dcc503024ca449b88156573f8562d
+      internalID: 284440754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd894a93eada9f04d8841312972d114b
+      internalID: 1619895959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314602ac9331e6945bef4d80f5f04b66
+      internalID: -1319973704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ae2ebc39449324fb3c6e02aa196c0f
+      internalID: -1549693029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb4d7ef5f3cae24c94dd6d26e683ff7
+      internalID: -1943783164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ae5cc5621f7de4ca8590f9aade1925
+      internalID: 175156462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1173feb2029f724683c5666735c81be
+      internalID: -693134935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c476e4a00bf7a544f8b80280c74adb56
+      internalID: 1589346731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa3bca8044b65e40bdb1bfd3c56a5ac
+      internalID: 570440043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GachaAnimation_SpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25138a14bbeedf46882ff305cf5d9e7
+      internalID: -443246083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6f679523e61f82d498984473242a5f6a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GachaAnimation_SpriteSheet_0: 3393421985194012519
+      GachaAnimation_SpriteSheet_1: 1480738173
+      GachaAnimation_SpriteSheet_10: 1473276666
+      GachaAnimation_SpriteSheet_11: 1473279813
+      GachaAnimation_SpriteSheet_12: 608651868
+      GachaAnimation_SpriteSheet_13: 1934496340
+      GachaAnimation_SpriteSheet_14: 1811786993
+      GachaAnimation_SpriteSheet_15: -1404070699
+      GachaAnimation_SpriteSheet_16: 1374123864
+      GachaAnimation_SpriteSheet_17: -1476736195
+      GachaAnimation_SpriteSheet_18: -1026290570
+      GachaAnimation_SpriteSheet_19: -1208790585
+      GachaAnimation_SpriteSheet_2: -1540636621
+      GachaAnimation_SpriteSheet_20: -2035606164
+      GachaAnimation_SpriteSheet_21: -245571474
+      GachaAnimation_SpriteSheet_22: -1234643647
+      GachaAnimation_SpriteSheet_23: 2077045919
+      GachaAnimation_SpriteSheet_24: 411989129
+      GachaAnimation_SpriteSheet_25: -785775803
+      GachaAnimation_SpriteSheet_26: -1395227206
+      GachaAnimation_SpriteSheet_27: 1422310959
+      GachaAnimation_SpriteSheet_28: -1409346164
+      GachaAnimation_SpriteSheet_29: 1830739510
+      GachaAnimation_SpriteSheet_3: -608474801
+      GachaAnimation_SpriteSheet_30: -1456540363
+      GachaAnimation_SpriteSheet_31: -875305662
+      GachaAnimation_SpriteSheet_32: 944178909
+      GachaAnimation_SpriteSheet_33: -1932387473
+      GachaAnimation_SpriteSheet_34: -370400389
+      GachaAnimation_SpriteSheet_35: 93047368
+      GachaAnimation_SpriteSheet_36: -71167976
+      GachaAnimation_SpriteSheet_37: -816265173
+      GachaAnimation_SpriteSheet_38: -1341184800
+      GachaAnimation_SpriteSheet_39: 1661123987
+      GachaAnimation_SpriteSheet_4: 455428293
+      GachaAnimation_SpriteSheet_40: 211625510
+      GachaAnimation_SpriteSheet_41: 1426244571
+      GachaAnimation_SpriteSheet_42: -1618786674
+      GachaAnimation_SpriteSheet_43: -354583732
+      GachaAnimation_SpriteSheet_44: 884181417
+      GachaAnimation_SpriteSheet_45: 1813620616
+      GachaAnimation_SpriteSheet_46: -1628566279
+      GachaAnimation_SpriteSheet_47: -473914090
+      GachaAnimation_SpriteSheet_48: 1233765162
+      GachaAnimation_SpriteSheet_49: -750140883
+      GachaAnimation_SpriteSheet_5: 1357208024
+      GachaAnimation_SpriteSheet_50: 1635071246
+      GachaAnimation_SpriteSheet_51: -168576064
+      GachaAnimation_SpriteSheet_52: -1824423710
+      GachaAnimation_SpriteSheet_53: 129549080
+      GachaAnimation_SpriteSheet_54: -213599138
+      GachaAnimation_SpriteSheet_55: 1013896053
+      GachaAnimation_SpriteSheet_56: 13879598
+      GachaAnimation_SpriteSheet_57: 1330861579
+      GachaAnimation_SpriteSheet_58: 124330761
+      GachaAnimation_SpriteSheet_59: -1090276576
+      GachaAnimation_SpriteSheet_6: -36037047
+      GachaAnimation_SpriteSheet_60: -1751148509
+      GachaAnimation_SpriteSheet_61: 1229332132
+      GachaAnimation_SpriteSheet_62: -1809064502
+      GachaAnimation_SpriteSheet_63: -814968351
+      GachaAnimation_SpriteSheet_64: 1433617242
+      GachaAnimation_SpriteSheet_65: -1816303680
+      GachaAnimation_SpriteSheet_66: 11867589
+      GachaAnimation_SpriteSheet_67: -419204193
+      GachaAnimation_SpriteSheet_68: -1470899762
+      GachaAnimation_SpriteSheet_69: -1706673126
+      GachaAnimation_SpriteSheet_7: 925425080
+      GachaAnimation_SpriteSheet_70: -974131986
+      GachaAnimation_SpriteSheet_71: 2075194864
+      GachaAnimation_SpriteSheet_72: 1632389302
+      GachaAnimation_SpriteSheet_73: -1244819124
+      GachaAnimation_SpriteSheet_74: -209008399
+      GachaAnimation_SpriteSheet_75: 847565720
+      GachaAnimation_SpriteSheet_76: -2000471760
+      GachaAnimation_SpriteSheet_77: -681912396
+      GachaAnimation_SpriteSheet_78: 32072856
+      GachaAnimation_SpriteSheet_79: 1994538100
+      GachaAnimation_SpriteSheet_8: -636435008
+      GachaAnimation_SpriteSheet_80: -1101074989
+      GachaAnimation_SpriteSheet_81: 26048023
+      GachaAnimation_SpriteSheet_82: -688561051
+      GachaAnimation_SpriteSheet_83: 1781028760
+      GachaAnimation_SpriteSheet_84: -1621501004
+      GachaAnimation_SpriteSheet_85: 284440754
+      GachaAnimation_SpriteSheet_86: 1619895959
+      GachaAnimation_SpriteSheet_87: -1319973704
+      GachaAnimation_SpriteSheet_88: -1549693029
+      GachaAnimation_SpriteSheet_89: -1943783164
+      GachaAnimation_SpriteSheet_9: 916298520
+      GachaAnimation_SpriteSheet_90: 175156462
+      GachaAnimation_SpriteSheet_91: -693134935
+      GachaAnimation_SpriteSheet_92: 1589346731
+      GachaAnimation_SpriteSheet_93: 570440043
+      GachaAnimation_SpriteSheet_94: -443246083
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bannerName: Compiled Evolution
   bannerSplash: {fileID: 989423273, guid: bc285412f5db14f42988eeae3f5b9475, type: 3}
-  bannerIcon: {fileID: -8465836497263030070, guid: 809e37807fb4a9d4d8e909464b63f0ff, type: 3}
+  bannerIcon: {fileID: -6470460504253458178, guid: 4cd75753747b2ca489f944934091c724, type: 3}
   allTowers:
   - {fileID: 11400000, guid: 708f0ed6d326f07498a5b50721d1433f, type: 2}
   - {fileID: 11400000, guid: 586683840a0b00a4fba08e3d201dc500, type: 2}
