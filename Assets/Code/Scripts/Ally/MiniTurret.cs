@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class SmalltalkSpawn : BaseTower
+public class MiniTurret: BaseTower
 {
     private float lifetime = 10f;
     //private SmalltalkTower parentTower;
