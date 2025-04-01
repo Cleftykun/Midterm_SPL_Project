@@ -19,7 +19,7 @@ public class GachaManager : MonoBehaviour
     void Start()
     {
         UpdateBannerDisplay();
-        summonManager.SetSelectedBanner(banners[0]);
+        summonManager.SetSelectedBanner(banners[1]);
     }
 
     // Update is called once per frame
