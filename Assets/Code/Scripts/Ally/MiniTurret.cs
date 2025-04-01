@@ -15,7 +15,7 @@ public class MiniTurret: BaseTower
     private IEnumerator SelfDestruct()
     {
         yield return new WaitForSeconds(lifetime);
-        //parentTower.OnSpawnDestroyed();
+        parentTower.OnSpawnDestroyed(this);
         Destroy(gameObject);
     }
 }

@@ -45,6 +45,7 @@ public class LevelManager : MonoBehaviour
     }
     private void UpdateGoldUI()
     {
+        Debug.Log(money.ToString());
         goldText.text = money.ToString();
     }
     public List<Transform> GetPath(int pathIndex)
@@ -104,9 +105,9 @@ public class LevelManager : MonoBehaviour
         if (money >= amount)
         {
             money -= amount;
+            UpdateGoldUI();
             return true;
         }
-        UpdateGoldUI();
         Debug.Log("Not Enough Money");
         return false;
     }
