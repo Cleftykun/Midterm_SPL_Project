@@ -42,7 +42,6 @@ public class LevelManager : MonoBehaviour
         UpdateHealthUI();
         UpdateCorruptionUI();
         UpdateGoldUI();
-
     }
     private void UpdateGoldUI()
     {
@@ -57,16 +56,31 @@ public class LevelManager : MonoBehaviour
         }
         return new List<Transform>();
     }
+    public Image Button;
+    public Sprite playSprite;
+    public Sprite pauseSprite;
+    public KeyCode pauseKey;
+    void Update()
+    {
+        if (Input.GetKeyDown(pauseKey))
+        {
+            Pause();
+        }
+
+    }
     public bool isPause = false;
-    public void Pause(){
-        if (!isPause) 
+    public void Pause()
+    {
+        if (!isPause)
         {
             Time.timeScale = 0f;
+            Button.sprite = playSprite;
             isPause = true;
         }
-        else 
+        else
         {
             Time.timeScale = 1f;
+            Button.sprite = pauseSprite;
             isPause = false;
         }
     }
@@ -74,9 +88,10 @@ public class LevelManager : MonoBehaviour
     {
         health -= dmg;
         corruptionPercentage += 1;
-        
+
         Debug.Log(health);
-        if (health <= 0){
+        if (health <= 0)
+        {
             Debug.Log("Game Over");
             FindFirstObjectByType<GameOverUi>().ShowGameOver();
         }
@@ -133,4 +148,10 @@ public class LevelManager : MonoBehaviour
 public class WaypointList
 {
     public List<Transform> waypoints;
+}
+
+public class PauseKey : MonoBehaviour
+{
+
+
 }
