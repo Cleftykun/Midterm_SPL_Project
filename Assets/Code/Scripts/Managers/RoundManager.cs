@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -16,7 +17,8 @@ public class RoundManager : MonoBehaviour
     public DialogueLoader dl;
 
     private bool roundActive = false;
-
+    [Header("UI Components")]
+    public TMP_Text currentWave;
     private void Awake()
     {
         if (Instance == null)

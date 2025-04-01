@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance { get; private set; }
     private List<Enemy> enemies = new List<Enemy>();
+    [Header("UI Components")]
+    public TMP_Text CurrentEnemy;
 
     void Awake()
     {
