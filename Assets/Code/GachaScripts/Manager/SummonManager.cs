@@ -44,11 +44,10 @@ public class SummonManager : MonoBehaviour
 
     private IEnumerator SummonAnimation()
     {
-        // TODO: Play Light Tunnel Animation Here
-        yield return new WaitForSeconds(2f); // Simulating animation delay
+        yield return new WaitForSeconds(1f); // Simulating animation delay
 
-        PerformSummon();
         LevelManager.main.SpendCurrency(summonCount * 200);
+        PerformSummon();
     }
 
     private void PerformSummon()

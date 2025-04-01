@@ -141,6 +141,6 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
-  conversionChance: 0.1
+  conversionChance: 1
   decipherDamage: 10
   allyPrefab: {fileID: 996180211710454622, guid: a1cad14ccd0ee5744b417eaf43f14c47, type: 3}

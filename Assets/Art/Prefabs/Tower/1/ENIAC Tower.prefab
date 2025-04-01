@@ -252,7 +252,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
-  chargeTime: 3
+  chargeTime: 1.5
   damageMultiplier: 10
   aoeRatio: 0.25
 --- !u!61 &5138677451571403568
