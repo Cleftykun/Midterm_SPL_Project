@@ -91,6 +91,7 @@ public class LevelManager : MonoBehaviour
             money -= amount;
             return true;
         }
+        UpdateGoldUI();
         Debug.Log("Not Enough Money");
         return false;
     }
