@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GachaAnimation_0: -1359546082329535494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

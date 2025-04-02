@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Mid.sln"
+    "dotnet.defaultSolution": "Midterm_SPL_Project.sln"
 }
