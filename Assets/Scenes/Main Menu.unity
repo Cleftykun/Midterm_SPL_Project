@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 240079713}
   - component: {fileID: 240079712}
   - component: {fileID: 240079711}
-  - component: {fileID: 240079714}
   - component: {fileID: 240079715}
   m_Layer: 5
   m_Name: Canvas
@@ -307,20 +306,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &240079714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240079709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d0ad7c7d6adf57438af1eb715b2e74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuIndex: 0
-  chapterScenes: 010000000200000003000000040000000500000006000000
 --- !u!114 &240079715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,7 +1274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1881595554}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1351,7 +1336,6 @@ GameObject:
   - component: {fileID: 1881595551}
   - component: {fileID: 1881595550}
   - component: {fileID: 1881595553}
-  - component: {fileID: 1881595554}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1478,18 +1462,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1881595554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881595549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb43ed81c541bd41815399349d981e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1939605411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,7 +1683,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1881595554}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
