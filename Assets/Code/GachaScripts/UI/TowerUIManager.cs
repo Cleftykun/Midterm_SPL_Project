@@ -10,7 +10,6 @@ public class TowerUIManager : MonoBehaviour
 
     private GameObject currentUIInstance;
     private Transform selectedTower;
-    // public TowerDetails towerDetails;
     public TowerDetails towerDetails;
 
     private void Awake()
@@ -20,6 +19,10 @@ public class TowerUIManager : MonoBehaviour
 
     public void ShowTowerUI(BaseTower tower)
     {
+        if(tower == null) {
+            UnityEngine.Debug.LogError("Tower is null");
+            return;
+        }
         towerDetails.showTowerUI(tower);
     }
 }

@@ -17,5 +17,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 5135398175848266765, guid: d8e2818b4db5ef244b1f2a5bac6c33da, type: 3}
   icon: {fileID: 0}
   rarity: R
+  towerDescription: COBOL (Common Business-Oriented Language) is a high-level programming
+    language designed for business, finance, and administrative systems. It has been
+    widely used in banking, government, and legacy systems since the 1960s due to
+    its reliability and readability.
   cost: 0
   isWaterTower: 0

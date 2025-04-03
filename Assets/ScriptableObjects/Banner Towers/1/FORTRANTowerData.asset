@@ -15,6 +15,11 @@ MonoBehaviour:
   towerID: 2
   towerName: FORTRAN Tower
   towerPrefab: {fileID: 5135398175848266765, guid: c7ee0d6222c08c2479cd2dcc5731861f, type: 3}
+  icon: {fileID: 0}
   rarity: R
+  towerDescription: 'Fortran (Formula Translation) is one of the earliest high-level
+    programming languages, developed in the 1950s for scientific and engineering
+    calculations. It revolutionized computing by making complex mathematical computations
+    easier and more efficient.         '
   cost: 0
   isWaterTower: 0
