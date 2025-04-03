@@ -251,6 +251,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
+  isPlayer: 0
   aiNodePrefab: {fileID: 4603303081859501483, guid: a6b33d0a385a8a1459635cceff5ae7f7, type: 3}
   nodeCooldown: 0.5
   nodeSpawnRadius: 1.5

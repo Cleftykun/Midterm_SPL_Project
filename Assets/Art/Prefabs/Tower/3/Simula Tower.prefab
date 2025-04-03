@@ -252,6 +252,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
+  isPlayer: 0
   classInstancePrefab: {fileID: 4603303081859501483, guid: 3f1933c47e7fd354392e96844fcb1c89, type: 3}
   instanceDuration: 5
   instanceSpawnRate: 10

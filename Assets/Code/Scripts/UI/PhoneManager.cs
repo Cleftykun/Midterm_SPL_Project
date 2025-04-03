@@ -17,41 +17,31 @@ public class PhoneManager : MonoBehaviour
     public static event Action PhoneClosed;
     public GameObject PhoneUI;
     public List<ScreenKey> ScreenKey = new List<ScreenKey>();
+    public GameObject Gacha;
+    public GameObject Messages;
     private GameObject activeScreen = null;
     public PlayerMovement playerMovement;
 
     void Start()
     {
-        // Ensure all screens are hidden but active at the start
-        foreach (var pair in ScreenKey)
-        {
-            if (pair.targetObject != null)
-                SetVisibility(pair.targetObject, false);
-
-            // If a button is assigned, link it to ToggleScreen()
-            if (pair.toggleButton != null)
-            {
-                ScreenKey capturedPair = pair; // Capture to avoid closure issues
-                pair.toggleButton.onClick.AddListener(() => ToggleScreen(capturedPair));
-            }
-        }
+        SetVisibility(Gacha,false);
+        SetVisibility(Messages,false);
         SetVisibility(PhoneUI, false);
     }
-
-    void Update()
+    void OnEnable()
     {
-        foreach (var pair in ScreenKey)
-        {
-            if (Input.GetKeyDown(pair.toggleKey) && pair.targetObject != null)
-            {
-                ToggleScreen(pair);
-            }
-        }
+        KeybindManager.OnGacha+= ()=>ToggleScreen(Gacha);
+        KeybindManager.OnMessages+= ()=>ToggleScreen(Messages);
+    }
+    void OnDisable()
+    {
+        KeybindManager.OnGacha-= ()=>ToggleScreen(Gacha);
+        KeybindManager.OnMessages-= ()=>ToggleScreen(Messages);
     }
 
-    void ToggleScreen(ScreenKey pair)
+    void ToggleScreen(GameObject screen)
     {
-        if (activeScreen == pair.targetObject && IsVisible(pair.targetObject))
+        if (activeScreen == screen && IsVisible(screen))
         {
             SetVisibility(PhoneUI, false);
             SetVisibility(activeScreen, false);
@@ -62,12 +52,8 @@ public class PhoneManager : MonoBehaviour
         else
         {
             SetVisibility(PhoneUI, true);
-            Activate(pair.targetObject);
+            Activate(screen);
 
-            if (pair.toggleKey == KeyCode.F3)
-                playerMovement.PhoneEquipSide();
-            else
-                playerMovement.PhoneEquip();
             PhoneOpened?.Invoke();
         }
     }

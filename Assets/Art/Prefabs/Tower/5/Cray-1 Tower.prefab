@@ -298,6 +298,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
+  isPlayer: 0
   burstFireRate: 0.1
   burstSize: 5
   chargeTime: 2

@@ -91,10 +91,6 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Cast();
-        }
     }
 
     private const string IdleFace = "[face]idle";
@@ -166,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
             StopCoroutine(zoomCoroutine); // Stop smoothly instead of snapping
 
         zoomCoroutine = StartCoroutine(ZoomCamera(targetZoom));
-        
+
     }
 
     // 🔥 Improved Smooth Zoom Transition
@@ -264,10 +260,18 @@ public class PlayerMovement : MonoBehaviour
 
     void OnEnable()
     {
-        Plot.onBuild +=Build;
+        Plot.onBuild += Build;
+        KeybindManager.OnGacha += PhoneEquipSide;
+        KeybindManager.OnMessages += PhoneEquip;
+        KeybindManager.OnAbility1 += Cast;
+        KeybindManager.OnAbility2 += null;//soon
     }
     void OnDisable()
     {
-        Plot.onBuild -=Build;
+        Plot.onBuild -= Build;
+        KeybindManager.OnGacha -= PhoneEquipSide;
+        KeybindManager.OnMessages -= PhoneEquip;
+        KeybindManager.OnAbility1 -= Cast;
+        KeybindManager.OnAbility2 -= null;//soon
     }
 }

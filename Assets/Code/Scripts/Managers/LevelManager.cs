@@ -27,14 +27,21 @@ public class LevelManager : MonoBehaviour
     public int health;
     public int maxHealth;
     public int corruptionPercentage;
-
-
     private void Awake()
     {
         main = this;
         maxHealth = startingHealth;
     }
-
+    void OnEnable()
+    {
+        KeybindManager.OnPauseAndPlay+= Pause;
+        KeybindManager.OnSpeed+=null;//soon
+    }
+    void OnDisable()
+    {
+        KeybindManager.OnPauseAndPlay+= Pause;
+        KeybindManager.OnSpeed+=null;//soon
+    }
     void Start()
     {
         money = startingMoney;
@@ -60,14 +67,6 @@ public class LevelManager : MonoBehaviour
     public Sprite playSprite;
     public Sprite pauseSprite;
     public KeyCode pauseKey;
-    void Update()
-    {
-        if (Input.GetKeyDown(pauseKey))
-        {
-            Pause();
-        }
-
-    }
     public bool isPause = false;
     public void Pause()
     {

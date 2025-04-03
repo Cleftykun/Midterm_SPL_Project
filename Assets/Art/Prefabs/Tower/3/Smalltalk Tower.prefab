@@ -251,6 +251,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 1
+  isPlayer: 0
   miniTurretPrefab: {fileID: 5213510076134116502, guid: fc571fefe6afa9f4ca8643f8e218ff92, type: 3}
   maxSpawns: 3
   spawnRadius: 2
