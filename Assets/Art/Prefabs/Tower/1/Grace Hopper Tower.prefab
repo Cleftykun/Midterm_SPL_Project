@@ -219,11 +219,12 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
+  isPlayer: 0
   trapPrefab: {fileID: 1813567664382242055, guid: c7679ccbe8dc9804591c3113818114a9, type: 3}
   trapCooldown: 1
   trapDuration: 30
   slowEffect: 0.9
-  maxTraps: 10
+  maxTraps: 5
 --- !u!1 &7491991971203666251
 GameObject:
   m_ObjectHideFlags: 0

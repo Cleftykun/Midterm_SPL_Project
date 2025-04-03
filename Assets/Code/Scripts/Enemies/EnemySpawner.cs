@@ -3,14 +3,21 @@ using UnityEngine.Events;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System;
 
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Wave Settings")]
     [SerializeField] private WaveSerializable[] waves;
+
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
-    
+    public static event Action<int,int> onWaveStart;
+    public static event Action onEnemySpawn;
+
+    [Header("Reference")]
+    [SerializeField] private GameObject winPanel;
+
     private int currentWaveIndex = 0;
     private bool isSpawning = false;
     private bool roundActive = false;
@@ -41,7 +48,7 @@ public class EnemySpawner : MonoBehaviour
             if (spawnData.timeSinceLastSpawn >= spawnData.spawnDelay && spawnData.remainingCount > 0)
             {
                 // Get a random path
-                int randomPathIndex = Random.Range(0, LevelManager.main.paths.Count);
+                int randomPathIndex = UnityEngine.Random.Range(0, LevelManager.main.paths.Count);
                 List<Transform> selectedPath = LevelManager.main.paths[randomPathIndex].waypoints;
 
                 // Spawn enemy
@@ -51,7 +58,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     enemyScript.Initialize(randomPathIndex);
                 }
-
+                onEnemySpawn?.Invoke();
                 spawnData.remainingCount--;
                 spawnData.timeSinceLastSpawn = 0f;
                 activeEnemies++; // Increase count when spawning
@@ -83,12 +90,16 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = true;
 
         spawnQueue.Clear();
+        int totalEnemiesInWave = 0;
         foreach (EnemySpawnInfo enemy in waves[currentWaveIndex].enemies)
         {
+            totalEnemiesInWave += enemy.count;
             spawnQueue.Add(new EnemySpawnData(enemy.enemyPrefab, enemy.count, enemy.spawnDelay));
         }
 
         currentWaveIndex++;
+        onWaveStart?.Invoke(currentWaveIndex, totalEnemiesInWave);
+
     }
 
     public void StopSpawning()
@@ -114,9 +125,13 @@ public class EnemySpawner : MonoBehaviour
         PlayerPrefs.SetInt("CompletedChapter", SceneManager.GetActiveScene().buildIndex); // Save chapter
         PlayerPrefs.Save();
 
-        // Add logic for transition to next chapter or show "Victory" screen
+        if (winPanel != null)
+        {
+            winPanel.SetActive(true); // Show win panel
+        }
     }
 }
+
 [System.Serializable]
 public class EnemySpawnData
 {

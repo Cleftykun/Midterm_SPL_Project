@@ -7,6 +7,7 @@ public class ByteBug : Enemy
 
     void Start()
     {
-        moveSpeed *= speedMultiplier; // Make the Byte Bug faster
+        base.Start();
+        this.moveSpeed *= speedMultiplier; // Make the Byte Bug faster
     }
 }

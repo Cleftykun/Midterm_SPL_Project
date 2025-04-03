@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public Transform player;  
+    public Transform player;
 
-    public Vector3 defaultOffset = new Vector3(0, 0, 0); 
-    public Vector3 phoneOffset = new Vector3(3, 0, 0);  
+    public Vector3 defaultOffset = new Vector3(0, 0, 0);
+    public Vector3 phoneOffset = new Vector3(3, 0, 0);
 
     private Vector3 currentOffset;
     private Vector3 velocity = Vector3.zero; // For smooth UI transition
@@ -42,8 +42,22 @@ public class PlayerCamera : MonoBehaviour
         playerCamera.orthographicSize = currentZoom;
     }
 
-    public void TogglePhone(bool open)
+
+    void OnEnable()
     {
-        isPhoneOpen = open;
+        PhoneManager.PhoneOpened += () => SetPhoneState(true);
+        PhoneManager.PhoneClosed += () => SetPhoneState(false);
     }
+    void OnDisable()
+    {
+        PhoneManager.PhoneOpened -= () => SetPhoneState(true);
+        PhoneManager.PhoneClosed -= () => SetPhoneState(false);
+    }
+
+    void SetPhoneState(bool isOpen)
+    {
+        isPhoneOpen = isOpen;
+    }
+
+
 }

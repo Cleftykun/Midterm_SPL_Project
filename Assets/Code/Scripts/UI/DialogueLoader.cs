@@ -19,6 +19,7 @@ public class DialogueLoader : MonoBehaviour
             CreateContact(contact);
             StartConversation(contact.contactName);
         }
+        messageManager.OpenChat("Echo");
     }
 
     void CreateContact(ContactData contactData)
@@ -43,6 +44,7 @@ public class DialogueLoader : MonoBehaviour
 
         contactDialogues[contactData.contactName] = controller;
         Debug.Log("DialogueLoader: Successfully created contact " + contactData.contactName);
+        messageManager.setController(controller);
     }
 
     public void TriggerContactEvent(string eventCode)

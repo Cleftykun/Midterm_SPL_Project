@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Camera Control")]
     public Camera playerCamera;
-    public PlayerCamera PlayerCameraScript;
     public float zoomDuration = 1;
     public float zoomInSize = 0.5f;
     public float zoomOutSize = 2f;
@@ -26,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Test")]
     public PlayerCharacter player;
     bool isPhoneOpen = false;
-
     void Start()
     {
         speed = moveSpeed;
@@ -130,6 +128,8 @@ public class PlayerMovement : MonoBehaviour
         animationstate.AddAnimation(1, "[face]idle", true, 0f);
         idleCoroutine = null; // Reset coroutine reference
     }
+
+
     public void PhoneEquip()
     {
         Spine.TrackEntry current = animationstate.GetCurrent(4);
@@ -138,7 +138,6 @@ public class PlayerMovement : MonoBehaviour
             animationstate.SetAnimation(4, "phone_out", false);
             animationstate.AddAnimation(2, "[face]idle", true, 0.5f);
             // StartZoom(zoomInSize);
-            PlayerCameraScript.TogglePhone(true);
         }
     }
     public void PhoneEquipSide()
@@ -149,7 +148,6 @@ public class PlayerMovement : MonoBehaviour
             animationstate.SetAnimation(4, "phone_landscape", false);
             animationstate.AddAnimation(2, "[face]idle", true, 0.5f);
             // StartZoom(zoomInSize);
-            PlayerCameraScript.TogglePhone(true);
         }
     }
 
@@ -157,7 +155,6 @@ public class PlayerMovement : MonoBehaviour
     {
 
         // StartZoom(zoomOutSize);
-        PlayerCameraScript.TogglePhone(false);
         StartCoroutine(FadeOutTrack(4, 0.2f));
 
         animationstate.ClearTrack(2);
@@ -265,5 +262,12 @@ public class PlayerMovement : MonoBehaviour
         animationstate.ClearTrack(track);
     }
 
-
+    void OnEnable()
+    {
+        Plot.onBuild +=Build;
+    }
+    void OnDisable()
+    {
+        Plot.onBuild -=Build;
+    }
 }

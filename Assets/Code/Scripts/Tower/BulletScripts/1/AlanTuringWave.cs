@@ -47,7 +47,7 @@ public class AlanTuringWave : BaseWave
         Ally allyObj = ally.GetComponent<Ally>();
         if (allyObj != null)
         {
-            allyObj.Initialize(enemy.GetMoveSpeed(), enemy.originalHitpoints, enemy.pathIndex);
+            allyObj.Initialize(enemy.GetMoveSpeed(), enemy.originalHitpoints, 1);
         }
 
         enemy.DestroyMe();

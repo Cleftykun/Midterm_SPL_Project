@@ -23,7 +23,12 @@ public class Enemy : MonoBehaviour
     public bool isDestroyed = false;
     public bool isFrozen = false;
     public int originalHitpoints;
-
+    public void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0; // Disable gravity for 2D movement
+        rb.freezeRotation = true; // Prevent rotation
+    }
     public void Initialize(int pathID)
     {
         path = LevelManager.main.GetPath(pathID); // Assigns path based on spawn

@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
 
 public abstract class BaseTower : MonoBehaviour
 {
@@ -45,11 +46,11 @@ public abstract class BaseTower : MonoBehaviour
     protected Transform target;
     protected float timeUntilFire;
     protected TargetingMode targetingMode = TargetingMode.First;
-    
     private int upgradeLevel = 1;
     private const int maxUpgradeLevel = 10; //Up to 300%
     private const float upgradeMultiplier = 0.2f; 
     public bool isDisabled = false;
+    public bool isPlayer = false;
     protected virtual void Start()
     {   
         currentAttackRange = baseAttackRange;
@@ -211,21 +212,25 @@ public abstract class BaseTower : MonoBehaviour
     {
         if (upgradeLevel >= maxUpgradeLevel)
         {
-            Debug.Log("Tower is already at max upgrade level!");
+            UnityEngine.Debug.Log("Tower is already at max upgrade level!");
             return false;
         }
 
         int towerCount = TowerInventory.Instance.GetTowerCount(towerName); // Get duplicates in inventory
-        if (towerCount <= 0)
+        int upgradeCost = upgradeLevel + 1;
+        UnityEngine.Debug.Log("Upgrade Cost: " + upgradeCost);
+        if (towerCount <= 0 || towerCount < upgradeCost)
         {
-            Debug.Log("No duplicate towers in inventory for upgrade!");
+            UnityEngine.Debug.Log("No duplicate towers in inventory for upgrade!");
             return false;
         }
+        for (int i = 0; i < upgradeCost; i++)
+        {
+            TowerInventory.Instance.RemoveTowerFromUI(towerName);
+        }
 
-        TowerInventory.Instance.RemoveTowerFromUI(towerName);
-
-        // Upgrade Stats
-        upgradeLevel++;
+            // Upgrade Stats
+            upgradeLevel++;
         currentAttackRange = baseAttackRange + (upgradeMultiplier * upgradeLevel);
         currentAttackSpeed = baseAttackSpeed + (upgradeMultiplier * upgradeLevel);
         damage = Mathf.RoundToInt(baseDamage + upgradeMultiplier * upgradeLevel);
@@ -234,6 +239,7 @@ public abstract class BaseTower : MonoBehaviour
     }
 
     public int GetUpgradeLevel() => upgradeLevel;
+    public string GetTowerName() => towerName;
     public void RandomizeTargetingMode()
     {
         TargetingMode[] modes = (TargetingMode[])System.Enum.GetValues(typeof(TargetingMode));
@@ -245,8 +251,14 @@ public abstract class BaseTower : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        if (isPlayer) return; // Prevent interaction if it's a player tower
         if (EventSystem.current.IsPointerOverGameObject()) return;
+
+        // Show the Tower UI and position it above the tower
         TowerUIManager.Instance.ShowTowerUI(this);
+        RectTransform uiTransform = TowerUIManager.Instance.GetComponent<RectTransform>();
+        Vector3 towerScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
+        uiTransform.position = towerScreenPosition + new Vector3(0, uiTransform.rect.height / 2, 0);
     }
 
 #if UNITY_EDITOR
