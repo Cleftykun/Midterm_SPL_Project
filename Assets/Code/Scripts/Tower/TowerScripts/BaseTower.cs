@@ -4,7 +4,6 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Diagnostics;
 
 public abstract class BaseTower : MonoBehaviour
 {
@@ -155,6 +154,7 @@ public abstract class BaseTower : MonoBehaviour
     public float GetAttackRange(){return currentAttackRange;}
     public float GetAttackSpeed(){return currentAttackSpeed;}
     public Classifaction GetClassifaction(){return towerClassification;}
+    public string GetTowerName() { return towerName; }
     public int GetDamage(){return damage;}
     public void SetAttackRange(float aR){currentAttackRange = aR;}
     public void SetAttackSpeed(float aS){currentAttackSpeed = aS;}
@@ -212,16 +212,15 @@ public abstract class BaseTower : MonoBehaviour
     {
         if (upgradeLevel >= maxUpgradeLevel)
         {
-            UnityEngine.Debug.Log("Tower is already at max upgrade level!");
+            Debug.Log("Tower is already at max upgrade level!");
             return false;
         }
 
         int towerCount = TowerInventory.Instance.GetTowerCount(towerName); // Get duplicates in inventory
-        int upgradeCost = upgradeLevel + 1;
-        UnityEngine.Debug.Log("Upgrade Cost: " + upgradeCost);
+        int upgradeCost = upgradeLevel;
         if (towerCount <= 0 || towerCount < upgradeCost)
         {
-            UnityEngine.Debug.Log("No duplicate towers in inventory for upgrade!");
+            Debug.Log("No duplicate towers in inventory for upgrade!");
             return false;
         }
         for (int i = 0; i < upgradeCost; i++)
@@ -239,7 +238,6 @@ public abstract class BaseTower : MonoBehaviour
     }
 
     public int GetUpgradeLevel() => upgradeLevel;
-    public string GetTowerName() => towerName;
     public void RandomizeTargetingMode()
     {
         TargetingMode[] modes = (TargetingMode[])System.Enum.GetValues(typeof(TargetingMode));

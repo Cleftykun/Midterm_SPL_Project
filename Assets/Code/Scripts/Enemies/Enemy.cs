@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0; // Disable gravity for 2D movement
         rb.freezeRotation = true; // Prevent rotation
+        worth = hitpoints;
     }
     public void Initialize(int pathID)
     {
