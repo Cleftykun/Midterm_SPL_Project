@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class BaseBullet : MonoBehaviour
@@ -61,5 +62,10 @@ public abstract class BaseBullet : MonoBehaviour
         {
             enemyHealth.TakeDamage(damage);
         }
+    }
+
+    internal void Initialize(Transform target, float adaptiveDamage)
+    {
+        throw new NotImplementedException();
     }
 }
