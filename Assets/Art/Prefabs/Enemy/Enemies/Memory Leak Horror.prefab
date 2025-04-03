@@ -184,14 +184,14 @@ MonoBehaviour:
   hitpoints: 1000
   worth: 50
   originalSpeed: 1.5
-  isConverted: 0
+  isConverted: 1
   pathIndex: 0
   path: []
   target: {fileID: 0}
   moveSpeed: 0
   slowFactor: 1
   isDestroyed: 0
-  isFrozen: 0
+  isFrozen: 1
   originalHitpoints: 0
   hpIncreaseRate: 5
   memoryFragmentPrefab: {fileID: 996180211710454622, guid: d11481a0d16f4734fb1617bacf3e0718, type: 3}
