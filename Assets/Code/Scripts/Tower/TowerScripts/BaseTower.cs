@@ -50,6 +50,16 @@ public abstract class BaseTower : MonoBehaviour
     private const float upgradeMultiplier = 0.2f; 
     public bool isDisabled = false;
     public bool isPlayer = false;
+    private string description;
+    public void Initialize(string description)
+    {
+        this.description = description;
+    }
+
+    public string GetDescription()
+    {
+        return description;
+    }
     protected virtual void Start()
     {   
         currentAttackRange = baseAttackRange;

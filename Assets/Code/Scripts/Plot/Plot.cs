@@ -81,7 +81,14 @@ public class Plot : MonoBehaviour
         // Place the tower
         LevelManager.main.SpendCurrency(towerToBuild.cost);
         onBuild?.Invoke();
-        tower = Instantiate(towerToBuild.towerPrefab, transform.position, Quaternion.identity); 
+        tower = Instantiate(towerToBuild.towerPrefab, transform.position, Quaternion.identity);
+        
+        // Initialize the tower
+        BaseTower baseTower = tower.GetComponent<BaseTower>();
+        if (baseTower != null)
+        {
+            baseTower.Initialize(towerToBuild.towerDescription); // Pass the appropriate pathID if needed
+        }
 
         // Remove tower from inventory
         TowerInventory.Instance.RemoveTowerFromUI(towerToBuild.towerName);

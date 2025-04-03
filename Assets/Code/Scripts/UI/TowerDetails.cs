@@ -12,6 +12,12 @@ public class TowerDetails : MonoBehaviour
     public Button abilityBind;//?maybe?
     public TMP_Text towerName;
     public TMP_Text towerDescription;
+    public TMP_Text atkOrig;
+    public TMP_Text atkBuff;
+    public TMP_Text spdOrig;
+    public TMP_Text spdBuff;
+    public TMP_Text rangeOrig;
+    public TMP_Text rangeBuff;
     public TMP_Text towerCurrentLevel;
     public TMP_Text towerAvailableCopy;
     public Button CloseTowerUI;
@@ -60,9 +66,15 @@ public class TowerDetails : MonoBehaviour
     private void UpdateTowerDetails()
     {
         towerName.text = tower.GetTowerName();
-        towerCurrentLevel.text = tower.GetUpgradeLevel() + "";
-        towerAvailableCopy.text = inventory.GetTowerCount(tower.GetTowerName()) + "";
-        // towerDescription = tower.getDescription(); for now
+        towerCurrentLevel.text = "Level: " + tower.GetUpgradeLevel();
+        towerAvailableCopy.text = "Copies: " + inventory.GetTowerCount(tower.GetTowerName());
+        towerDescription.text = tower.GetDescription();
+        atkOrig.text = tower.baseDamage.ToString();
+        atkBuff.text = "+(" + (tower.GetDamage()-tower.baseDamage).ToString() + ")";
+        spdOrig.text = tower.baseAttackSpeed.ToString();
+        spdBuff.text = "+(" + (tower.GetAttackSpeed()-tower.baseAttackSpeed).ToString() + ")";
+        rangeOrig.text = tower.baseAttackRange.ToString();
+        rangeBuff.text = "+(" + (tower.GetAttackRange()-tower.baseAttackRange).ToString() + ")";
         Debug.Log("Showing Details:" + tower.name + " " + tower.GetUpgradeLevel() + " " + inventory.GetTowerCount(tower.name));
     }
     private void AssignButtons()

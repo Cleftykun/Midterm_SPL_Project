@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour
             return;
         }
 
+        EnemySpawner.Instance.AddEnemy();    
         originalHitpoints = hitpoints;
         moveSpeed = originalSpeed;
         target = path[pathIndex]; // Start at first point

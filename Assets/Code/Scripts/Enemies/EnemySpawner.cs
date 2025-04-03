@@ -36,6 +36,10 @@ public class EnemySpawner : MonoBehaviour
         onEnemyDestroy.AddListener(EnemyDestroyed); // Listen for enemy deaths
     }
 
+    public void AddEnemy()
+    {
+        activeEnemies++;
+    }
     void Update()
     {
         if (!isSpawning || !roundActive || spawnQueue.Count == 0) return;
@@ -61,7 +65,6 @@ public class EnemySpawner : MonoBehaviour
                 onEnemySpawn?.Invoke();
                 spawnData.remainingCount--;
                 spawnData.timeSinceLastSpawn = 0f;
-                activeEnemies++; // Increase count when spawning
             }
 
             if (spawnData.remainingCount <= 0)

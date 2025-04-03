@@ -59,6 +59,7 @@ public class LevelManager : MonoBehaviour
     public Sprite playSprite;
     public Sprite pauseSprite;
     public KeyCode pauseKey;
+    public KeyCode speedUpKey;
     void Update()
     {
         if (Input.GetKeyDown(pauseKey))
