@@ -10,6 +10,7 @@ public class AINode : MonoBehaviour
     private int damage;
     private Rigidbody2D rb;
 
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,7 +21,7 @@ public class AINode : MonoBehaviour
         }
 
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-        
+
         FindTarget();
         Destroy(gameObject, lifetime);
     }
@@ -87,4 +88,6 @@ public class AINode : MonoBehaviour
             enemy.TakeDamage(damage);
         }
     }
+
+   
 }
