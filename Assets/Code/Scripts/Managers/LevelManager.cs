@@ -28,12 +28,22 @@ public class LevelManager : MonoBehaviour
     public int maxHealth;
     public int corruptionPercentage;
 
+
     private void Awake()
     {
         main = this;
         maxHealth = startingHealth;
     }
-
+    void OnEnable()
+    {
+        KeybindManager.OnPauseAndPlay+= Pause;
+        KeybindManager.OnSpeed+=null;//soon
+    }
+    void OnDisable()
+    {
+        KeybindManager.OnPauseAndPlay+= Pause;
+        KeybindManager.OnSpeed+=null;//soon
+    }
     void Start()
     {
         money = startingMoney;
