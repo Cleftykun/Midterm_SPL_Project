@@ -219,6 +219,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
+  isPlayer: 0
 --- !u!1 &7491991971203666251
 GameObject:
   m_ObjectHideFlags: 0

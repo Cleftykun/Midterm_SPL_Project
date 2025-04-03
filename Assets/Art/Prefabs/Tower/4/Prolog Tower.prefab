@@ -219,6 +219,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
+  isPlayer: 0
   logicGatePrefab: {fileID: 1813567664382242055, guid: f2c9a63823df88240babc0698191cddb, type: 3}
   gateCooldown: 5
   gateLifetime: 5

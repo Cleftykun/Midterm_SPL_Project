@@ -6528,7 +6528,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1035600860}
   m_HandleRect: {fileID: 1035600859}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -14165,8 +14165,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 758990718}
   m_HandleRect: {fileID: 758990717}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.99999964
+  m_Value: 1
+  m_Size: 0.9999995
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14322,6 +14322,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ea334d1a1d97d8e44bd702ee73776425, type: 2}
   - {fileID: 11400000, guid: b209e691910392c4792195930a219e6b, type: 2}
   - {fileID: 11400000, guid: fdb42940595fe4d40961e596175141ff, type: 2}
+  - {fileID: 11400000, guid: 2dce79fe752bbd54c9f98f51ea61147a, type: 2}
 --- !u!114 &1779314878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14532,6 +14533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerOptionsPrefab: {fileID: 6464740649760878900, guid: ac0d9395362a09b4f8ca7acfa77fc187, type: 3}
+  towerDetails: {fileID: 0}
 --- !u!114 &1779314882
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,6 +14,9 @@ public abstract class BaseBullet : MonoBehaviour
     protected Transform target;
     public float elapsedTime = 0f;
 
+    // Event for when the bullet misses its target
+    public event Action<Transform> OnMissed;
+
     protected virtual void Start()
     {
         Destroy(gameObject, bulletLifetime);
@@ -67,5 +70,16 @@ public abstract class BaseBullet : MonoBehaviour
     internal void Initialize(Transform target, float adaptiveDamage)
     {
         throw new NotImplementedException();
+    }
+
+    private void MissedTarget()
+    {
+        OnMissed?.Invoke(target); // Trigger event if the bullet misses
+    }
+
+    private void DestroyBullet()
+    {
+        MissedTarget();
+        Destroy(gameObject);
     }
 }
