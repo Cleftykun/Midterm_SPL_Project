@@ -43,6 +43,10 @@ public class EnemySpawner : MonoBehaviour
     {
         activeEnemies++;
     }
+    public void RemoveEnemy()
+    {
+        activeEnemies--;
+    }
     void Update()
     {
         if (!isSpawning || !roundActive || spawnQueue.Count == 0) return;

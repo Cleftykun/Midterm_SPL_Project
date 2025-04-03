@@ -31,13 +31,15 @@ public class WaveUIManager : MonoBehaviour
         EnemySpawner.onWaveStart -= UpdateWave;
         EnemySpawner.onEnemySpawn -= UpdateWaveSpawnProgress;
     }
+
     private void UpdateWave(int wave, int enemyCount)
     {
-        currentWave.text = wave + "";
-        totalEnemies.text = enemyCount + "";
+        currentWave.text = wave.ToString();
+        totalEnemies.text = enemyCount.ToString();
         totalEnemyCount = enemyCount;
         resetProgress();
     }
+
     private void resetProgress()
     {
         waveProgress.maxValue = totalEnemyCount;
@@ -46,20 +48,23 @@ public class WaveUIManager : MonoBehaviour
         killedProgress.value = 0;
         spawnedEnemiesCount = 0;
         waveKillCount = 0;
-        UpdateKillCount();
+        enemiesKilled.text = waveKillCount.ToString(); // Initialize enemiesKilled to 0
     }
+
     private void UpdateWaveSpawnProgress()
     {
         spawnedEnemiesCount++;
         waveProgress.value = spawnedEnemiesCount;
     }
+
     private void UpdateKillCount()
     {
         waveKillCount++;
         killCount++;
-        enemiesKilled.text = waveKillCount + "";
+        enemiesKilled.text = waveKillCount.ToString();
         killedProgress.value = waveKillCount;
     }
+
     private void SetWaveFinish()
     {
     }

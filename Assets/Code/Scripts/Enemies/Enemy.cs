@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
     public bool isDestroyed = false;
     public bool isFrozen = false;
     public int originalHitpoints;
+    private bool isSummonedEnemy = false; // Prevents infinite cloning
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,11 +54,13 @@ public class Enemy : MonoBehaviour
         if (Vector2.Distance(target.position, transform.position) <= 0.1f)
         {
             pathIndex++;
-
             if (pathIndex >= path.Count)
             {
-                LevelManager.main.TakeDamage(hitpoints);
-                EnemySpawner.onEnemyDestroy.Invoke();
+                if (!IsSummonedEnemy())
+                {
+                    EnemySpawner.onEnemyDestroy?.Invoke();
+                }
+                LevelManager.main.TakeDamage(GetPlayerDamage());
                 Destroy(gameObject);
                 return;
             }
@@ -78,13 +81,26 @@ public class Enemy : MonoBehaviour
             rb.linearVelocity = direction * (moveSpeed * slowFactor);
         }
     }
+    public void SetSummonedEnemy(bool summoned)
+    {
+        isSummonedEnemy = summoned;
+    }
+    public bool IsSummonedEnemy()
+    {
+        return isSummonedEnemy;
+    }
 
     public virtual void TakeDamage(int dmg)
     {
         hitpoints -= dmg;
         if (hitpoints <= 0 && !isDestroyed)
         {
-            EnemySpawner.onEnemyDestroy.Invoke();
+            if(!isSummonedEnemy)
+            {
+                EnemySpawner.onEnemyDestroy.Invoke();
+            }
+
+            EnemySpawner.Instance.RemoveEnemy();
             LevelManager.main.IncreaseCurrency(worth);
             isDestroyed = true;
             Destroy(gameObject);

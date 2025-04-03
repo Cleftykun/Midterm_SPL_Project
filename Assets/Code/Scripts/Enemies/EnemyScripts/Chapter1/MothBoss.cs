@@ -29,6 +29,7 @@ public class MothBoss : Enemy
             GameObject bug = Instantiate(smallBugPrefab, transform.position, Quaternion.identity);
             Enemy bugScript = bug.GetComponent<Enemy>();
             bugScript.Initialize(randomPathIndex);
+            bugScript.SetSummonedEnemy(true); // Set as summoned enemy
             DisableNearbyTowers();
         }
     }

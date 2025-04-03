@@ -33,8 +33,9 @@ public class MemoryLeakHorror : Enemy
 
             GameObject bugFragment = Instantiate(memoryFragmentPrefab, selectedPath[0].position, Quaternion.identity);
             Enemy bug = bugFragment.GetComponent<Enemy>();
+            bug.SetSummonedEnemy(true);
             bug.Initialize(randomPathIndex);
-            
+
         }
     }
 }

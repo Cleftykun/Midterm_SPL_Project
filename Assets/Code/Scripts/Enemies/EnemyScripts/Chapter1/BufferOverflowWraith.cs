@@ -29,6 +29,7 @@ public class BufferOverflowWraith : Enemy
         if (cloneScript != null)
         {
             cloneScript.hitpoints = Mathf.Max(originalHitpoints / 2, 1); 
+            cloneScript.SetSummonedEnemy(true); // Set as summoned enemy
             cloneScript.moveSpeed = moveSpeed * 1.5f; 
             cloneScript.hasCloned = true;
             cloneScript.GetComponent<SpriteRenderer>().color = cloneColor; 
