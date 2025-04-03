@@ -166,8 +166,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4615737355548864368}
-  bulletSpeed: 10
+  bulletSpeed: 50
   bulletLifetime: 3
+  elapsedTime: 0
   explosionRadius: 2
   aoeDamageRatio: 0.25
   enemyMask:

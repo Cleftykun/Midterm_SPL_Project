@@ -8,9 +8,13 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("Wave Settings")]
     [SerializeField] private WaveSerializable[] waves;
+
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
-    
+
+    [Header("Reference")]
+    [SerializeField] private GameObject winPanel;
+
     private int currentWaveIndex = 0;
     private bool isSpawning = false;
     private bool roundActive = false;
@@ -41,7 +45,7 @@ public class EnemySpawner : MonoBehaviour
             if (spawnData.timeSinceLastSpawn >= spawnData.spawnDelay && spawnData.remainingCount > 0)
             {
                 // Get a random path
-                int randomPathIndex = Random.Range(0, LevelManager.main.paths.Count);
+                int randomPathIndex = UnityEngine.Random.Range(0, LevelManager.main.paths.Count);
                 List<Transform> selectedPath = LevelManager.main.paths[randomPathIndex].waypoints;
 
                 // Spawn enemy
@@ -114,9 +118,13 @@ public class EnemySpawner : MonoBehaviour
         PlayerPrefs.SetInt("CompletedChapter", SceneManager.GetActiveScene().buildIndex); // Save chapter
         PlayerPrefs.Save();
 
-        // Add logic for transition to next chapter or show "Victory" screen
+        if (winPanel != null)
+        {
+            winPanel.SetActive(true); // Show win panel
+        }
     }
 }
+
 [System.Serializable]
 public class EnemySpawnData
 {

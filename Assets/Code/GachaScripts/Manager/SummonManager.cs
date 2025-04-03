@@ -46,7 +46,13 @@ public class SummonManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f); // Simulating animation delay
 
-        LevelManager.main.SpendCurrency(summonCount * 200);
+        if (!LevelManager.main.SpendCurrency(summonCount * 200))
+        {
+            // Check if enough currency
+            Debug.Log("Not enough currency for summon.");
+            yield break;
+        }
+            
         PerformSummon();
     }
 
