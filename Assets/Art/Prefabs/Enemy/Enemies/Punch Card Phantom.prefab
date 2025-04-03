@@ -184,7 +184,7 @@ MonoBehaviour:
   hitpoints: 25
   worth: 50
   originalSpeed: 1.5
-  isConverted: 1
+  isConverted: 0
   pathIndex: 0
   path: []
   target: {fileID: 0}

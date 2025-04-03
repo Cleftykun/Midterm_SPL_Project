@@ -173,6 +173,7 @@ MonoBehaviour:
   currentAttackSpeed: 0
   damage: 0
   isDisabled: 0
+  isPlayer: 0
   waveInterval: 2
   waveRadius: 3
   waveTimer: 1

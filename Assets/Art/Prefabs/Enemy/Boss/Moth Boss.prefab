@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 579367259269635653}
   enemyName: Moth Boss
-  hitpoints: 10000
+  hitpoints: 50000
   worth: 10
   originalSpeed: 0.5
   isConverted: 1
@@ -191,7 +191,7 @@ MonoBehaviour:
   moveSpeed: 0
   slowFactor: 1
   isDestroyed: 0
-  isFrozen: 0
+  isFrozen: 1
   originalHitpoints: 0
   smallBugPrefab: {fileID: 996180211710454622, guid: 4181fc04f09369044b749e0dd572a55d, type: 3}
   spawnOnDeathCount: 5
