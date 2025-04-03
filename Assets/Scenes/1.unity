@@ -16309,7 +16309,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bcff890126724f94a81ce11c6841f3eb, type: 2}
   - {fileID: 11400000, guid: 63fb6c4b2b1c88e489b180d4632236cb, type: 2}
   - {fileID: 11400000, guid: 0d2ff444ae19a8240971ba5fd3f2c992, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 4c71a1b9aeceea641acd4ed9b84e533e, type: 2}
 --- !u!114 &1779314878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16322,7 +16322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cb71859cbc0b540be35c72aebc0a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMoney: 200
+  startingMoney: 10000
   startingHealth: 999999
   startingCorruption: 0
   currentHPBar: {fileID: 714165091}
