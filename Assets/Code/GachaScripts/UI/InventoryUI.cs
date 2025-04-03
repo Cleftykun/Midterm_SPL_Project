@@ -57,11 +57,28 @@ public class InventoryUI : MonoBehaviour
                 UnityEngine.Debug.LogError("SpriteRenderer with sprite 'body_black_01' not found for tower prefab: " + entry.towerPrefab.name);
             }
 
-            TextMeshProUGUI textComponent = item.GetComponentInChildren<TextMeshProUGUI>();
-            if (textComponent != null)
+            // Assign the tower name to the TextMeshProUGUI component (towerName)
+            TextMeshProUGUI towerNameText = item.transform.Find("TowerName")?.GetComponent<TextMeshProUGUI>();
+            if (towerNameText != null)
             {
-                textComponent.text = $"x{entry.count}";
+                towerNameText.text = entry.towerPrefab.name; // Assuming name is the tower's name
             }
+            else
+            {
+                UnityEngine.Debug.LogError("towerName TextMeshProUGUI component not found in prefab.");
+            }
+
+            // Assign the number of copies to the TextMeshProUGUI component (Copies)
+            TextMeshProUGUI copiesText = item.transform.Find("Copies")?.GetComponent<TextMeshProUGUI>();
+            if (copiesText != null)
+            {
+                copiesText.text = $"x{entry.count}";
+            }
+            else
+            {
+                UnityEngine.Debug.LogError("Copies TextMeshProUGUI component not found in prefab.");
+            }
+
 
             // Find the UI image components where you want to assign these sprites
             UnityEngine.UI.Image baseIcon = item.transform.Find("BaseIcon")?.GetComponent<UnityEngine.UI.Image>();

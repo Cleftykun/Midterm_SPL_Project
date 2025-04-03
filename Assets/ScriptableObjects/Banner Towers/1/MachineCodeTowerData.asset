@@ -15,6 +15,11 @@ MonoBehaviour:
   towerID: 1
   towerName: Machine Code Tower
   towerPrefab: {fileID: 5135398175848266765, guid: 3b9c52457e615ab45b0c3a5735160e3b, type: 3}
+  icon: {fileID: 0}
   rarity: C
+  towerDescription: "Machine code is the lowest-level programming language, consisting
+    of binary instructions that a computer\u2019s CPU can directly execute. It is
+    specific to a processor\u2019s architecture and serves as the foundation for
+    all software operations.         "
   cost: 0
   isWaterTower: 0

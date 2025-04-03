@@ -17,5 +17,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 5135398175848266765, guid: 196cb976f8d37ee42aabc240c36e2cd0, type: 3}
   icon: {fileID: 0}
   rarity: U
+  towerDescription: Grace Hopper was a pioneering computer scientist and U.S. Navy
+    rear admiral who helped develop COBOL, one of the first programming languages.
+    She also popularized the term "debugging" after removing an actual moth from
+    a computer.
   cost: 0
   isWaterTower: 0

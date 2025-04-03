@@ -28,7 +28,6 @@ public class LevelManager : MonoBehaviour
     public int maxHealth;
     public int corruptionPercentage;
 
-
     private void Awake()
     {
         main = this;
@@ -82,6 +81,20 @@ public class LevelManager : MonoBehaviour
             Time.timeScale = 1f;
             Button.sprite = pauseSprite;
             isPause = false;
+        }
+    }
+    private bool isDoubleSpeed = false;
+    public void SpeedUp()
+    {
+        if (!isDoubleSpeed)
+        {
+            Time.timeScale = 2f;
+            isDoubleSpeed = true;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            isDoubleSpeed = false;
         }
     }
     public void TakeDamage(int dmg)
