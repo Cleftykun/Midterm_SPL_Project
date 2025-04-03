@@ -188,6 +188,7 @@ MonoBehaviour:
   pathIndex: 0
   path: []
   target: {fileID: 0}
+  canBeFrozen: 0
   moveSpeed: 0
   slowFactor: 1
   isDestroyed: 0

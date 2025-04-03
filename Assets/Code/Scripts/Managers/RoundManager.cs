@@ -42,16 +42,11 @@ public class RoundManager : MonoBehaviour
             StartRound();
             dl.StartConversation("Echo");
 
-            // Wait for either 30 seconds to pass or all enemies to be defeated
-            float roundTimer = 30f;
-            while (roundTimer > 0)
-            {
-                roundTimer -= Time.deltaTime;
-                yield return null;
-            }
-            dl.StartConversation("Turing");
-            
-            Debug.Log($"Round {currentRound} ending!");
+            // Wait until spawning starts to avoid skipping rounds
+            yield return new WaitUntil(() => EnemySpawner.Instance.IsSpawning());
+
+            // Wait until all enemies are defeated and spawning has stopped
+            yield return new WaitUntil(() => !EnemySpawner.Instance.IsThereEnemy() && !EnemySpawner.Instance.IsSpawning());
             EndRound();
         }
     }

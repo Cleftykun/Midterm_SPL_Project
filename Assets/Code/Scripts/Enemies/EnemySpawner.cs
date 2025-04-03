@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject winPanel;
 
     private int currentWaveIndex = 0;
-    private bool isSpawning = false;
+    private bool isSpawning = true;
     private bool roundActive = false;
     private List<EnemySpawnData> spawnQueue = new List<EnemySpawnData>();
     private int activeEnemies = 0; // Track how many enemies are still alive
@@ -35,7 +35,10 @@ public class EnemySpawner : MonoBehaviour
 
         onEnemyDestroy.AddListener(EnemyDestroyed); // Listen for enemy deaths
     }
-
+    public bool IsThereEnemy()
+    {
+        return activeEnemies > 0;
+    }
     public void AddEnemy()
     {
         activeEnemies++;
@@ -104,6 +107,10 @@ public class EnemySpawner : MonoBehaviour
         onWaveStart?.Invoke(currentWaveIndex, totalEnemiesInWave);
 
     }
+    public bool IsSpawning()
+    {
+        return isSpawning;
+    }
 
     public void StopSpawning()
     {
@@ -116,7 +123,7 @@ public class EnemySpawner : MonoBehaviour
     {
         activeEnemies--; // Decrease count when an enemy dies
 
-        if (activeEnemies <= 0 && currentWaveIndex >= waves.Length) // All enemies gone & last wave done
+        if (!IsThereEnemy() && !IsSpawning() && currentWaveIndex >= waves.Length) // All enemies gone & last wave done
         {
             ChapterCompleted();
         }

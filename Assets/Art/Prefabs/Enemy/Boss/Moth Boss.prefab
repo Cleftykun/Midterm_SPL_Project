@@ -188,10 +188,11 @@ MonoBehaviour:
   pathIndex: 0
   path: []
   target: {fileID: 0}
+  canBeFrozen: 0
   moveSpeed: 0
   slowFactor: 1
   isDestroyed: 0
-  isFrozen: 1
+  isFrozen: 0
   originalHitpoints: 0
   smallBugPrefab: {fileID: 996180211710454622, guid: 4181fc04f09369044b749e0dd572a55d, type: 3}
   spawnOnDeathCount: 5

@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     public int pathIndex = 0;
     public List<Transform> path;
     public Transform target;
-    
+    public bool canBeFrozen = true;
     public float moveSpeed;
     public float slowFactor = 1f;
     public bool isDestroyed = false;
@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isFrozen)
+        if (isFrozen && canBeFrozen)
         {
             rb.linearVelocity = Vector2.zero;
         }
