@@ -38,10 +38,8 @@ public class EnemyMovement : MonoBehaviour
         if (Vector2.Distance(target.position, transform.position) <= 0.1f)
         {
             pathIndex++;    
-            UnityEngine.Debug.Log("Enemy reached target: " + target.name);
             if (pathIndex >= path.Count)
             {
-                UnityEngine.Debug.Log("Enemy is summoned enemy: " + enemy.IsSummonedEnemy());
                 if (enemy.IsSummonedEnemy())
                 {
                     EnemySpawner.onEnemyDestroy?.Invoke();

@@ -1,10 +1,7 @@
 using UnityEngine;
 
-public abstract class BaseSupport : MonoBehaviour
+public abstract class BaseSupport : BaseTower
 {
-    [Header("Tower Data")]
-    public string towerName;
-    protected bool isDisabled = true; // Can be toggled on/off if needed
 
     protected virtual void Start()
     {
@@ -30,13 +27,38 @@ public abstract class BaseSupport : MonoBehaviour
         TowerManager.Instance.UnregisterSupportTower(this);
         RemoveSupportEffect();
     }
-    public void DisableTower()
+
+    public override void Shoot()
     {
-        isDisabled = true;
+        // Disable shooting functionality
     }
 
-    public void EnableTower()
+    protected override void RotateTowardsTarget()
     {
-        isDisabled = false;
+        // Disable rotation functionality
     }
+
+    protected override void FindTarget()
+    {
+        // Disable target finding functionality
+    }
+
+    protected override void Update()
+    {
+        // Disable update functionality
+    }
+
+    public override void ApplySlow(float factor, float duration)
+    {
+        // Disable slow functionality
+    }
+
+
+    public override bool UpgradeTower()
+    {
+        // Disable upgrade functionality
+        return false;
+    }
+
+   
 }

@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
+using System;
 
 public abstract class BaseTower : MonoBehaviour
 {
@@ -41,16 +43,18 @@ public abstract class BaseTower : MonoBehaviour
     [SerializeField] protected float currentAttackRange;
     [SerializeField] protected float currentAttackSpeed;
     [SerializeField] protected int damage;
+    [SerializeField] private LineRenderer attackRangeIndicator; // LineRenderer to visualize attack range
 
     protected Transform target;
     protected float timeUntilFire;
     protected TargetingMode targetingMode = TargetingMode.First;
     private int upgradeLevel = 1;
     private const int maxUpgradeLevel = 10; //Up to 300%
-    private const float upgradeMultiplier = 0.2f; 
+    private const float upgradeMultiplier = 0.2f;
     public bool isDisabled = false;
     public bool isPlayer = false;
     private string description;
+
     public void Initialize(string description)
     {
         this.description = description;
@@ -60,11 +64,21 @@ public abstract class BaseTower : MonoBehaviour
     {
         return description;
     }
+
     protected virtual void Start()
-    {   
+    {
         currentAttackRange = baseAttackRange;
         currentAttackSpeed = baseAttackSpeed;
         damage = baseDamage;
+
+        // Initialize the attack range indicator
+        if (attackRangeIndicator != null)
+        {
+            attackRangeIndicator.positionCount = 50;
+            attackRangeIndicator.loop = true;
+            UpdateAttackRangeIndicator();
+            attackRangeIndicator.enabled = false; // Hide the indicator initially
+        }
     }
 
     protected virtual void Update()
@@ -85,7 +99,6 @@ public abstract class BaseTower : MonoBehaviour
                 timeUntilFire = 0;
             }
         }
-
     }
 
     public virtual void Shoot()
@@ -161,17 +174,17 @@ public abstract class BaseTower : MonoBehaviour
         }
     }
 
-    public float GetAttackRange(){return currentAttackRange;}
-    public float GetAttackSpeed(){return currentAttackSpeed;}
-    public Classifaction GetClassifaction(){return towerClassification;}
+    public float GetAttackRange() { return currentAttackRange; }
+    public float GetAttackSpeed() { return currentAttackSpeed; }
+    public Classifaction GetClassifaction() { return towerClassification; }
     public string GetTowerName() { return towerName; }
-    public int GetDamage(){return damage;}
-    public void SetAttackRange(float aR){currentAttackRange = aR;}
-    public void SetAttackSpeed(float aS){currentAttackSpeed = aS;}
-    public void SetDamage(int dmg){damage = dmg;}
+    public int GetDamage() { return damage; }
+    public void SetAttackRange(float aR) { currentAttackRange = aR; UpdateAttackRangeIndicator(); }
+    public void SetAttackSpeed(float aS) { currentAttackSpeed = aS; }
+    public void SetDamage(int dmg) { damage = dmg; }
     public void Reset()
     {
-        if (upgradeLevel == 1) 
+        if (upgradeLevel == 1)
         {
             // Reset to base stats if it's level 1 (no upgrades applied)
             currentAttackRange = baseAttackRange;
@@ -186,10 +199,11 @@ public abstract class BaseTower : MonoBehaviour
             damage = Mathf.RoundToInt(baseDamage + (upgradeMultiplier * upgradeLevel));
         }
         ResetTargetingMode();
+        UpdateAttackRangeIndicator();
     }
     private bool isSlowed = false;
     public virtual void ApplySlow(float factor, float duration)
-    {        
+    {
         if (factor > currentSlowFactor && isSlowed) return;
         StartCoroutine(SlowEffect(factor, duration));
     }
@@ -217,12 +231,11 @@ public abstract class BaseTower : MonoBehaviour
         isDisabled = false;
     }
 
-
-    public bool UpgradeTower()
+    public virtual bool UpgradeTower()
     {
         if (upgradeLevel >= maxUpgradeLevel)
         {
-            Debug.Log("Tower is already at max upgrade level!");
+            UnityEngine.Debug.Log("Tower is already at max upgrade level!");
             return false;
         }
 
@@ -230,7 +243,7 @@ public abstract class BaseTower : MonoBehaviour
         int upgradeCost = upgradeLevel;
         if (towerCount <= 0 || towerCount < upgradeCost)
         {
-            Debug.Log("No duplicate towers in inventory for upgrade!");
+            UnityEngine.Debug.Log("No duplicate towers in inventory for upgrade!");
             return false;
         }
         for (int i = 0; i < upgradeCost; i++)
@@ -238,11 +251,12 @@ public abstract class BaseTower : MonoBehaviour
             TowerInventory.Instance.RemoveTowerFromUI(towerName);
         }
 
-            // Upgrade Stats
-            upgradeLevel++;
+        // Upgrade Stats
+        upgradeLevel++;
         currentAttackRange = baseAttackRange + (upgradeMultiplier * upgradeLevel);
         currentAttackSpeed = baseAttackSpeed + (upgradeMultiplier * upgradeLevel);
-        damage = Mathf.RoundToInt(baseDamage + upgradeMultiplier * upgradeLevel);
+        damage = Mathf.RoundToInt(baseDamage + (upgradeMultiplier * upgradeLevel));
+        UpdateAttackRangeIndicator();
 
         return true;
     }
@@ -251,7 +265,7 @@ public abstract class BaseTower : MonoBehaviour
     public void RandomizeTargetingMode()
     {
         TargetingMode[] modes = (TargetingMode[])System.Enum.GetValues(typeof(TargetingMode));
-        targetingMode = modes[Random.Range(0, modes.Length)];
+        targetingMode = modes[UnityEngine.Random.Range(0, modes.Length)];
     }
     public void ResetTargetingMode()
     {
@@ -264,9 +278,39 @@ public abstract class BaseTower : MonoBehaviour
 
         // Show the Tower UI and position it above the tower
         TowerUIManager.Instance.ShowTowerUI(this);
-        RectTransform uiTransform = TowerUIManager.Instance.GetComponent<RectTransform>();
-        Vector3 towerScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
-        uiTransform.position = towerScreenPosition + new Vector3(0, uiTransform.rect.height / 2, 0);
+        UnityEngine.Debug.Log("Clicked!");
+        // Show the attack range indicator
+        if (attackRangeIndicator != null)
+        {
+            attackRangeIndicator.enabled = true;
+        }
+    }
+    private void OnMouseUp()
+    {
+        // Hide the attack range indicator when the mouse button is released
+        if (attackRangeIndicator != null)
+        {
+            attackRangeIndicator.enabled = false;
+        }
+    }
+
+    private void UpdateAttackRangeIndicator()
+    {
+        if (attackRangeIndicator != null)
+        {
+            float thetaScale = 0.1f;
+            int size = (int)((2.0f * Mathf.PI) / thetaScale);
+            size++;
+            attackRangeIndicator.positionCount = size;
+            int i = 0;
+            for (float theta = 0; theta < 2 * Mathf.PI; theta += thetaScale)
+            {
+                float x = currentAttackRange * Mathf.Cos(theta);
+                float y = currentAttackRange * Mathf.Sin(theta);
+                attackRangeIndicator.SetPosition(i, new Vector3(x, y, 0) + transform.position);
+                i++;
+            }
+        }
     }
 
 #if UNITY_EDITOR

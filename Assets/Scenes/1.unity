@@ -1667,7 +1667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -59, y: -60}
+  m_AnchoredPosition: {x: 0, y: -60}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238876315
@@ -8660,18 +8660,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 491206566}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &781067781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &787072571
 GameObject:
   m_ObjectHideFlags: 0
@@ -8819,7 +8807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &788027608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8845,7 +8833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -370, y: -35}
+  m_AnchoredPosition: {x: -421, y: -35}
   m_SizeDelta: {x: 500, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788027609
@@ -9006,8 +8994,6 @@ MonoBehaviour:
   bannerPrefab: {fileID: 8922032754392810288, guid: 6687c146289f9b143a4f2e63b50607c4, type: 3}
   banners:
   - {fileID: 11400000, guid: de6a155ac97ff3c4a9018dcfeca3adae, type: 2}
-  - {fileID: 11400000, guid: fed1cdb2250b1d7428b058721ee2ca67, type: 2}
-  - {fileID: 11400000, guid: 1d20263afbf2c6244b6f1d16325faa16, type: 2}
   bannerPanel: {fileID: 723890177}
   summonManager: {fileID: 552066044}
 --- !u!1 &792487628
@@ -19051,6 +19037,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - {fileID: 11400000, guid: 729ff8de1c962a7489a6ea912dc0bc83, type: 2}
+  - {fileID: 11400000, guid: 86bcadb5807669c4d8b3db2dfe317cf4, type: 2}
+  - {fileID: 11400000, guid: bf21edb42c4621c4eb0e4556ef3fed0c, type: 2}
+  - {fileID: 11400000, guid: 9d5fd0ac56fadfa4ab6a12a9318a5de6, type: 2}
+  - {fileID: 11400000, guid: 5e4e83f8dd8198e428e6a87fc0fa8573, type: 2}
+  - {fileID: 11400000, guid: 5726b837e100e3c4d9c74dc1c170022f, type: 2}
+  - {fileID: 11400000, guid: 38156ed91f1b99e4a94b616da0c0f7ec, type: 2}
+  - {fileID: 11400000, guid: e5bbdf7aa922db942a1a29ba0e265bf6, type: 2}
+  - {fileID: 11400000, guid: 8f80ea3c8d4ce8848b8a1002cbcaaee9, type: 2}
+  - {fileID: 11400000, guid: 43aa32bbf36d6d344bdf786e9b1bcef0, type: 2}
   winPanel: {fileID: 568281345}
 --- !u!114 &1779314877
 MonoBehaviour:
@@ -19220,7 +19215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerOptionsPrefab: {fileID: 6464740649760878900, guid: ac0d9395362a09b4f8ca7acfa77fc187, type: 3}
-  towerDetails: {fileID: 781067781}
+  towerDetails: {fileID: 788027611}
 --- !u!114 &1779314882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21891,6 +21886,7 @@ MonoBehaviour:
   currentAttackRange: 0
   currentAttackSpeed: 0
   damage: 0
+  attackRangeIndicator: {fileID: 0}
   isDisabled: 0
   isPlayer: 1
   waveRadius: 5
@@ -21921,6 +21917,7 @@ MonoBehaviour:
   currentAttackRange: 0
   currentAttackSpeed: 0
   damage: 0
+  attackRangeIndicator: {fileID: 0}
   isDisabled: 0
   isPlayer: 1
 --- !u!1 &2030188343
