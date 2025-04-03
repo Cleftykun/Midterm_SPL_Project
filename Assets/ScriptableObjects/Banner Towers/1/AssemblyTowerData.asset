@@ -15,6 +15,10 @@ MonoBehaviour:
   towerID: 0
   towerName: Assembly Tower
   towerPrefab: {fileID: 5135398175848266765, guid: 7998fae61bae67545805ceb3b28f7b41, type: 3}
+  icon: {fileID: 0}
   rarity: C
+  towerDescription: 'Assembly is a low-level programming language that directly corresponds
+    to a computer''s machine code, allowing precise control over hardware. It is
+    used in system programming, embedded systems, and performance-critical applications.         '
   cost: 0
   isWaterTower: 0

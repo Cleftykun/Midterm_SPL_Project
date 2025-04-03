@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0142481279c2fb74ba8cd1d002f733a2, type: 3}
   m_Name: Cray-1 Tower
   m_EditorClassIdentifier: 
-  towerID: 33
+  towerID: 32
   towerName: Cray-1 Tower
   towerPrefab: {fileID: 5135398175848266765, guid: a870027a748b5894392060923b13279e, type: 3}
   icon: {fileID: 0}

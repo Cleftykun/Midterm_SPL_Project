@@ -17,5 +17,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 5135398175848266765, guid: ab925aabbaab63b4d84b240ca08f8001, type: 3}
   icon: {fileID: 0}
   rarity: S
+  towerDescription: The ENIAC (Electronic Numerical Integrator and Computer) was
+    the world's first general-purpose electronic computer, completed in 1945. It
+    was used for military calculations and could perform complex computations much
+    faster than human calculations.
   cost: 0
   isWaterTower: 0

@@ -17,5 +17,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 5135398175848266765, guid: e5b643df26aadbb47b5a9d7ee1d8b857, type: 3}
   icon: {fileID: 0}
   rarity: U
+  towerDescription: Alan Turing was a brilliant mathematician and cryptographer who
+    helped break the Nazi Enigma code during World War II, significantly shortening
+    the war. He is also considered the father of modern computing for his work on
+    the theoretical foundations of artificial intelligence and algorithms.
   cost: 0
   isWaterTower: 0

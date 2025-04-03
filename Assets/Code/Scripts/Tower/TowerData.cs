@@ -8,6 +8,7 @@ public class TowerData : ScriptableObject
     public GameObject towerPrefab;
     public Image icon;
     public string rarity;
+    public string towerDescription;
     public int cost;
     public bool isWaterTower;
 }
