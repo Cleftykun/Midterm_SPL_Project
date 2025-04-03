@@ -234,6 +234,7 @@ public abstract class BaseTower : MonoBehaviour
     }
 
     public int GetUpgradeLevel() => upgradeLevel;
+    public string GetTowerName() => towerName;
     public void RandomizeTargetingMode()
     {
         TargetingMode[] modes = (TargetingMode[])System.Enum.GetValues(typeof(TargetingMode));

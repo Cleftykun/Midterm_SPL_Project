@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class Plot : MonoBehaviour
 {
+    public static event Action onBuild;
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
@@ -9,7 +11,6 @@ public class Plot : MonoBehaviour
     
     private GameObject tower;
     private Color startColor;
-    public PlayerMovement player;
 
     void Awake()
     {
@@ -79,7 +80,7 @@ public class Plot : MonoBehaviour
 
         // Place the tower
         LevelManager.main.SpendCurrency(towerToBuild.cost);
-        player.Build();
+        onBuild?.Invoke();
         tower = Instantiate(towerToBuild.towerPrefab, transform.position, Quaternion.identity); 
 
         // Remove tower from inventory

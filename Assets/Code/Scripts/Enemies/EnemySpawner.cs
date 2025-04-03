@@ -3,6 +3,7 @@ using UnityEngine.Events;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
+    public static event Action<int,int> onWaveStart;
+    public static event Action onEnemySpawn;
 
     [Header("Reference")]
     [SerializeField] private GameObject winPanel;
@@ -55,7 +58,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     enemyScript.Initialize(randomPathIndex);
                 }
-
+                onEnemySpawn?.Invoke();
                 spawnData.remainingCount--;
                 spawnData.timeSinceLastSpawn = 0f;
                 activeEnemies++; // Increase count when spawning
@@ -87,12 +90,16 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = true;
 
         spawnQueue.Clear();
+        int totalEnemiesInWave = 0;
         foreach (EnemySpawnInfo enemy in waves[currentWaveIndex].enemies)
         {
+            totalEnemiesInWave += enemy.count;
             spawnQueue.Add(new EnemySpawnData(enemy.enemyPrefab, enemy.count, enemy.spawnDelay));
         }
 
         currentWaveIndex++;
+        onWaveStart?.Invoke(currentWaveIndex, totalEnemiesInWave);
+
     }
 
     public void StopSpawning()

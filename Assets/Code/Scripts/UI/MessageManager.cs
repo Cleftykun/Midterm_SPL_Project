@@ -14,6 +14,7 @@ public class MessageManager : MonoBehaviour
 {
     public GameObject messagePrefab;
     public Transform chatPanel;
+    public Image Icon;
     public GameObject cPanel;
     //public GameObject contactsPanel;
     public GameObject replyPanel;
@@ -134,14 +135,9 @@ public class MessageManager : MonoBehaviour
         if (activeDialogue != null)
         {
             Debug.Log("MessageManager: Displaying pending reply for " + contactName);
+            Icon.sprite = activeDialogue.icon.sprite;
             activeDialogue.pending();
         }
-    }
-    public void CloseChat()
-    {
-        currentContact = "";
-        cPanel.SetActive(false);
-        // contactsPanel.SetActive(true);
     }
 
     public void ShowReplyOptions(string chooseLine)
@@ -199,6 +195,10 @@ public class MessageManager : MonoBehaviour
         {
             Debug.LogError("MessageManager: No active dialogue controller for reply handling.");
         }
+    }
+    public void setController(DialogueController dc)
+    {
+        this.activeDialogueController = dc;
     }
 
     private void ScrollToBottom()

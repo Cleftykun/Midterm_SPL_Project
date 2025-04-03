@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TowerInventory : MonoBehaviour
 {
+    public static event Action OnInventoryChanged;
     public static TowerInventory Instance;
     
     [System.Serializable]
@@ -23,7 +25,7 @@ public class TowerInventory : MonoBehaviour
             Instance = this;
         }
     }
-
+    
     public void AddTower(TowerData tower, int amount = 1)
     {
         string towerName = tower.towerName;
@@ -59,6 +61,7 @@ public class TowerInventory : MonoBehaviour
             // Update UI
             InventoryUI.Instance.UpdateInventoryUI(inventory);  
         }
+        OnInventoryChanged?.Invoke();
     }
 
 
@@ -73,5 +76,6 @@ public class TowerInventory : MonoBehaviour
         {
             AddTower(tower, 1);
         }
+        OnInventoryChanged?.Invoke();
     }
 }

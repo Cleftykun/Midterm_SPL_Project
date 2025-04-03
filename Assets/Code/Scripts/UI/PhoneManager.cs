@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System;
 
 [System.Serializable]
 public class ScreenKey
@@ -12,6 +13,8 @@ public class ScreenKey
 
 public class PhoneManager : MonoBehaviour
 {
+    public static event Action PhoneOpened;
+    public static event Action PhoneClosed;
     public GameObject PhoneUI;
     public List<ScreenKey> ScreenKey = new List<ScreenKey>();
     private GameObject activeScreen = null;
@@ -54,6 +57,7 @@ public class PhoneManager : MonoBehaviour
             SetVisibility(activeScreen, false);
             activeScreen = null;
             playerMovement.PhoneUnEquip();
+            PhoneClosed?.Invoke();
         }
         else
         {
@@ -64,6 +68,7 @@ public class PhoneManager : MonoBehaviour
                 playerMovement.PhoneEquipSide();
             else
                 playerMovement.PhoneEquip();
+            PhoneOpened?.Invoke();
         }
     }
 

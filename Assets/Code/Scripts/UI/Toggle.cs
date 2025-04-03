@@ -15,13 +15,11 @@ public class Toggle : MonoBehaviour
     public List<ObjectKey> objectKey = new List<ObjectKey>();
     void Start()
     {
-        // Ensure all screens are hidden but active at the start
         foreach (var pair in objectKey)
         {
             if (pair.targetObject != null)
                 SetVisibility(pair.targetObject, false);
-
-            // If a button is assigned, link it to ToggleScreen()
+                
             if (pair.toggleButton != null)
             {
                 ObjectKey capturedPair = pair; // Capture to avoid closure issues
