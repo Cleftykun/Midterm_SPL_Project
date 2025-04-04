@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d596b0a8a8c3e4d4fb08fef4d3166102
+guid: 217a5dfb2f37d884e9cea505d70e6377
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6061554443999414028
-    second: creditBg_0
+      213: 920845866709292149
+    second: creditBG 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: creditBg_0
+      name: creditBG 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c07864db6a7fe1450800000000000000
-      internalID: 6061554443999414028
+      spriteID: 574181adf6087cc00800000000000000
+      internalID: 920845866709292149
       vertices: []
       indices: 
       edges: []
