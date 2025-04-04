@@ -48,7 +48,6 @@ public class KeybindManager : MonoBehaviour
     public static event Action OnTowerAbility8;
     public static event Action OnTowerAbility9;
     public static event Action OnTowerAbility0;
-
     void Update()
     {
         if (Input.GetKeyDown(pauseAndPlay)) OnPauseAndPlay?.Invoke();
@@ -72,4 +71,28 @@ public class KeybindManager : MonoBehaviour
         if (Input.GetKeyDown(towerAbility9)) OnTowerAbility9?.Invoke();
         if (Input.GetKeyDown(towerAbility0)) OnTowerAbility0?.Invoke();
     }
+
+    void OnDestroy()
+    {
+        // Unsubscribe from events to prevent multiple calls
+        OnPauseAndPlay = null;
+        OnSpeed = null;
+        OnInventory = null;
+        OnMessages = null;
+        OnGacha = null;
+        OnMenu = null;
+        OnAbility1 = null;
+        OnAbility2 = null;
+        OnTowerAbility1 = null;
+        OnTowerAbility2 = null;
+        OnTowerAbility3 = null;
+        OnTowerAbility4 = null;
+        OnTowerAbility5 = null;
+        OnTowerAbility6 = null;
+        OnTowerAbility7 = null;
+        OnTowerAbility8 = null;
+        OnTowerAbility9 = null;
+        OnTowerAbility0 = null;
+}
+
 }

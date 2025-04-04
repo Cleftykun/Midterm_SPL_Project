@@ -69,7 +69,18 @@ public class TowerDetails : MonoBehaviour
         towerCurrentLevel.text = "Level: " + tower.GetUpgradeLevel();
         towerAvailableCopy.text = "Copies: " + inventory.GetTowerCount(tower.GetTowerName());
         towerDescription.text = tower.GetDescription();
-        atkOrig.text = tower.baseDamage.ToString();
+        // Ensure baseDamage is displayed with up to 4 digits
+        atkOrig.text = tower.baseDamage.ToString("D4");
+        atkBuff.text = "+(" + (tower.GetDamage() - tower.baseDamage).ToString("D4") + ")";
+
+        // Ensure baseAttackSpeed is displayed with up to 3 decimal places
+        spdOrig.text = tower.baseAttackSpeed.ToString("F3");
+        spdBuff.text = "+(" + (tower.GetAttackSpeed() - tower.baseAttackSpeed).ToString("F3") + ")";
+
+        // Ensure baseAttackRange is displayed with up to 3 decimal places
+        rangeOrig.text = tower.baseAttackRange.ToString("F3");
+        rangeBuff.text = "+(" + (tower.GetAttackRange() - tower.baseAttackRange).ToString("F3") + ")";
+
         atkBuff.text = "+(" + (tower.GetDamage()-tower.baseDamage).ToString() + ")";
         spdOrig.text = tower.baseAttackSpeed.ToString();
         spdBuff.text = "+(" + (tower.GetAttackSpeed()-tower.baseAttackSpeed).ToString() + ")";
