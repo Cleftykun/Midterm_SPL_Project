@@ -180,14 +180,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 579367259269635653}
-  enemyName: NUll Pointer Beetle
-  hitpoints: 25
+  enemyName: Null Pointer Beetle
+  hitpoints: 180
   worth: 50
   originalSpeed: 1.5
   isConverted: 1
   pathIndex: 0
   path: []
   target: {fileID: 0}
+  canBeFrozen: 1
   moveSpeed: 0
   slowFactor: 1
   isDestroyed: 0

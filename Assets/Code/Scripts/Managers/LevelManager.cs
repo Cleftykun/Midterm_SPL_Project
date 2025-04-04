@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using System.Diagnostics;
 
 public class LevelManager : MonoBehaviour
 {
@@ -54,7 +55,6 @@ public class LevelManager : MonoBehaviour
     }
     private void UpdateGoldUI()
     {
-        Debug.Log(money.ToString());
         goldText.text = money.ToString();
     }
     public List<Transform> GetPath(int pathIndex)
@@ -113,11 +113,19 @@ public class LevelManager : MonoBehaviour
         health -= dmg;
         corruptionPercentage += 1;
 
-        Debug.Log(health);
         if (health <= 0)
         {
-            Debug.Log("Game Over");
-            FindFirstObjectByType<GameOverUi>().ShowGameOver();
+            var gameOverUI = FindFirstObjectByType<GameOverUi>();
+            if (gameOverUI != null)
+            {
+                UnityEngine.Debug.Log("Game Over UI found, showing Game Over screen.");
+                gameOverUI.ShowGameOver();
+            }
+            else
+            {
+                UnityEngine.Debug.LogError("GameOverUi not found in the scene.");
+            }
+            UnityEngine.Debug.Log("Game Over");
         }
         // Update instant HP bar
         UpdateHealthUI();
@@ -132,7 +140,7 @@ public class LevelManager : MonoBehaviour
             UpdateGoldUI();
             return true;
         }
-        Debug.Log("Not Enough Money");
+        UnityEngine.Debug.Log("Not Enough Money");
         return false;
     }
     public void IncreaseCurrency(int amount)

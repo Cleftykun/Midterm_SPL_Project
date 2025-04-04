@@ -5,6 +5,10 @@ public class MainMenu : MonoBehaviour
 {
     public void StartNewGame()
     {
+        // Reset PlayerPrefs to start a new game
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+        // Load the first chapter
         SceneManager.LoadScene("1");
     }
 

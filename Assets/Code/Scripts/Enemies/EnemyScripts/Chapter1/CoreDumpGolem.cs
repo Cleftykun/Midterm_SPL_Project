@@ -9,9 +9,8 @@ public class CoreDumpGolem : Enemy
 
     void Start()
     {
-        base.Start();
-        this.hitpoints *= 10; // Very tanky
-        this.moveSpeed /= 2; // Very slow
+        hitpoints *= 10; // Very tanky
+        moveSpeed /= 2; // Very slow
     }
 
     public override void TakeDamage(int dmg)

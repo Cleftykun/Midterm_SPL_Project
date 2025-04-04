@@ -181,14 +181,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 579367259269635653}
   enemyName: Syntax Crawlers
-  hitpoints: 25
+  hitpoints: 266
   worth: 50
   originalSpeed: 1.5
   isConverted: 1
   pathIndex: 0
   path: []
   target: {fileID: 0}
-  canBeFrozen: 0
+  canBeFrozen: 1
   moveSpeed: 0
   slowFactor: 1
   isDestroyed: 0

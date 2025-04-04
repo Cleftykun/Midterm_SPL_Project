@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Wave 9
   m_EditorClassIdentifier: 
   enemies:
-  - enemyPrefab: {fileID: 996180211710454622, guid: 4181fc04f09369044b749e0dd572a55d, type: 3}
-    count: 80
-    spawnDelay: 0.3
-  - enemyPrefab: {fileID: 996180211710454622, guid: e0b2e86f2e7b38d449849aa63ab50326, type: 3}
-    count: 20
-    spawnDelay: 0.5
-  - enemyPrefab: {fileID: 996180211710454622, guid: 223395200c557de46ad26eb4abff3993, type: 3}
+  - enemyPrefab: {fileID: 996180211710454622, guid: a770ecf981e261e43b221a11a8b67640, type: 3}
     count: 10
-    spawnDelay: 0.4
-  - enemyPrefab: {fileID: 996180211710454622, guid: b9a657bbe24159042af0d7ad02e4f471, type: 3}
-    count: 80
+    spawnDelay: 0.25
+  - enemyPrefab: {fileID: 996180211710454622, guid: 223395200c557de46ad26eb4abff3993, type: 3}
+    count: 5
     spawnDelay: 0.5
-  - enemyPrefab: {fileID: 996180211710454622, guid: b97d0c3ad42d9d944bc9e554cf9c511f, type: 3}
-    count: 20
-    spawnDelay: 0.6
   waveDelay: 5

@@ -13,13 +13,7 @@ MonoBehaviour:
   m_Name: Wave 4
   m_EditorClassIdentifier: 
   enemies:
-  - enemyPrefab: {fileID: 996180211710454622, guid: a770ecf981e261e43b221a11a8b67640, type: 3}
+  - enemyPrefab: {fileID: 996180211710454622, guid: 4181fc04f09369044b749e0dd572a55d, type: 3}
     count: 10
-    spawnDelay: 0.25
-  - enemyPrefab: {fileID: 996180211710454622, guid: d11481a0d16f4734fb1617bacf3e0718, type: 3}
-    count: 20
-    spawnDelay: 0.1
-  - enemyPrefab: {fileID: 996180211710454622, guid: b9a657bbe24159042af0d7ad02e4f471, type: 3}
-    count: 20
-    spawnDelay: 0.3
+    spawnDelay: 0.3333333
   waveDelay: 5

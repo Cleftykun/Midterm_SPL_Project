@@ -3102,7 +3102,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1779314882}
+      - m_Target: {fileID: 1431781088}
         m_TargetAssemblyTypeName: GameOverUi, Assembly-CSharp
         m_MethodName: PlayAgain
         m_Mode: 1
@@ -16250,6 +16250,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428390146}
   m_CullTransparentMesh: 1
+--- !u!1 &1431781087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1431781089}
+  - component: {fileID: 1431781088}
+  - component: {fileID: 1431781090}
+  m_Layer: 0
+  m_Name: Persistent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1431781088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431781087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c763a58a716108a49922564a62b6924a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 1257699013}
+  nextSceneName: 
+--- !u!4 &1431781089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431781087}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.17734, y: -1.9805853, z: -7.790595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1431781090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431781087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0ad7c7d6adf57438af1eb715b2e74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuIndex: 0
+  chapterScenes: 020000000300000004000000050000000600000007000000
 --- !u!1001 &1445515252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18453,7 +18514,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1711162018}
-  - component: {fileID: 1711162019}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -18483,20 +18543,6 @@ Transform:
   - {fileID: 2019123214}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1711162019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711162017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d0ad7c7d6adf57438af1eb715b2e74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuIndex: 0
-  chapterScenes: 010000000200000003000000040000000500000006000000
 --- !u!1 &1711487882
 GameObject:
   m_ObjectHideFlags: 0
@@ -18686,7 +18732,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1779314882}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOverUi, Assembly-CSharp
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -18992,7 +19038,6 @@ GameObject:
   - component: {fileID: 1779314876}
   - component: {fileID: 1779314875}
   - component: {fileID: 1779314881}
-  - component: {fileID: 1779314882}
   - component: {fileID: 1779314883}
   m_Layer: 0
   m_Name: Level Manager
@@ -19046,6 +19091,26 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5bbdf7aa922db942a1a29ba0e265bf6, type: 2}
   - {fileID: 11400000, guid: 8f80ea3c8d4ce8848b8a1002cbcaaee9, type: 2}
   - {fileID: 11400000, guid: 43aa32bbf36d6d344bdf786e9b1bcef0, type: 2}
+  - {fileID: 11400000, guid: fa7549daae9b3a1498a8010357031445, type: 2}
+  - {fileID: 11400000, guid: e3fbe70c2a17f4843a49a39dfbaed369, type: 2}
+  - {fileID: 11400000, guid: bcf2c2921ffd9ee4782260cf0607f103, type: 2}
+  - {fileID: 11400000, guid: 2af34dfaef0b98f4aa270cfd88c546d5, type: 2}
+  - {fileID: 11400000, guid: ef3de7d45d82ef54682a8a1e2394b91a, type: 2}
+  - {fileID: 11400000, guid: e0877703f42be184497ef132a33992bf, type: 2}
+  - {fileID: 11400000, guid: efdfdf9bb25e7374397d9494e0bec1ca, type: 2}
+  - {fileID: 11400000, guid: 66154d6011b5ae949bf92bd7f4723215, type: 2}
+  - {fileID: 11400000, guid: 0316e1443ff91684596888487e3de984, type: 2}
+  - {fileID: 11400000, guid: 66d7ebd3ea7da2c48834f0c8803bc6cf, type: 2}
+  - {fileID: 11400000, guid: 1af287859e6df1a4b960bc6287b5a097, type: 2}
+  - {fileID: 11400000, guid: bb10eb02692059a4095d866df2a45ffc, type: 2}
+  - {fileID: 11400000, guid: c0c338647c9ec2f4892ccfc487a730ec, type: 2}
+  - {fileID: 11400000, guid: 3e889226a80a14e4e844339131ae5bc0, type: 2}
+  - {fileID: 11400000, guid: 2eabb46c9f5056941af3d85794cf09a8, type: 2}
+  - {fileID: 11400000, guid: db37ee34592487f4bb201e5308ec447f, type: 2}
+  - {fileID: 11400000, guid: 0801513d74ef19342a0cc9a638ce67d1, type: 2}
+  - {fileID: 11400000, guid: 1655736f81347dd429407b9f6ea0e605, type: 2}
+  - {fileID: 11400000, guid: 601444bad5542634b943d5a3b12be5ba, type: 2}
+  - {fileID: 11400000, guid: 7208a3877a0bda44dada81f8061bfd80, type: 2}
   winPanel: {fileID: 568281345}
 --- !u!114 &1779314877
 MonoBehaviour:
@@ -19080,8 +19145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cb71859cbc0b540be35c72aebc0a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMoney: 90000
-  startingHealth: 999999
+  startingMoney: 2200
+  startingHealth: 1000
   startingCorruption: 0
   currentHPBar: {fileID: 714165091}
   delayedHPBar: {fileID: 777901583}
@@ -19216,19 +19281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerOptionsPrefab: {fileID: 6464740649760878900, guid: ac0d9395362a09b4f8ca7acfa77fc187, type: 3}
   towerDetails: {fileID: 788027611}
---- !u!114 &1779314882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779314874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c763a58a716108a49922564a62b6924a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 1257699013}
 --- !u!114 &1779314883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21793,7 +21845,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1779314882}
+      - m_Target: {fileID: 1431781088}
         m_TargetAssemblyTypeName: GameOverUi, Assembly-CSharp
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -22695,7 +22747,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1711162019}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
         m_MethodName: LoadChapter
         m_Mode: 3
@@ -22980,3 +23032,4 @@ SceneRoots:
   - {fileID: 1711162018}
   - {fileID: 2030188345}
   - {fileID: 992278350}
+  - {fileID: 1431781089}
